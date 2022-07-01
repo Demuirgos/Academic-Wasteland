@@ -1,0 +1,151 @@
+% @Author: Jacem Chaieb
+% @Date:   2015-07-26 13:42:06
+% @Last Modified by:   Jacem Chaieb
+% @Last Modified time: 2016-04-12 15:37:31
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% This is the main file
+% You can add/remove chapters/pdf files here
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt, oneside, a4paper]{ensa-pfe-report}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Define code variables
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\graphicspath{{images/}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Include required packages
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\usepackage{showframe}
+\usepackage[skins]{tcolorbox}
+\usepackage[english]{babel}
+\usepackage[english]{varioref}
+\usepackage[export]{adjustbox}
+\usepackage{acro}
+\usepackage{setspace}
+\usepackage{color}
+\usepackage{tabularx}
+\usepackage{ctable}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{tikz}
+\usepackage{seqsplit}
+\usepackage{fontenc}
+%\usepackage{lipsum}
+%\usepackage{todonotes}
+\usepackage{wrapfig}
+\usepackage{setspace}
+\usepackage[all]{nowidow}
+\usepackage{minted}
+\usepackage{longtable,geometry}
+\usepackage{xcolor}
+\usepackage[sorting=none, backend=bibtex]{biblatex}
+\usepackage{fancyhdr}
+\setstretch{1.5}
+\addbibresource{001-report}
+
+%% TODO: Remove this function when done %%
+\newcommand\todoin[2][]{\todo[inline, caption={2do}, #1]{
+\begin{minipage}{\textwidth-4pt}#2\end{minipage}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Include useful commands
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\include{000-commands}
+
+\hypersetup{
+  pdftitle={\reportTitle~-~\reportSubject},%
+  pdfauthor={\reportAuthor},%
+  pdfsubject={\reportSubject},%
+  pdfkeywords={report} {internship} {pfe} {enis}
+}
+
+\graphicspath {{./Images/} {./Images/Showcase/}}
+
+\begin{document}
+  \begin{pfe-enis}
+    \pagenumbering{roman}% i ii iii iv ...
+
+    % \listoftodos{}
+
+    % Front matter
+    \include{002-top_matter}
+    \cleardoublepage%
+    
+    \include{003-thanks}
+    \cleardoublepage%
+
+    \include{005-Abstract}
+    \cleardoublepage%    
+
+    {%
+    \let\oldnumberline\numberline%
+    \renewcommand{\numberline}{\figurename~\oldnumberline}%
+    \listoffigures%
+    }
+    \addcontentsline{toc}{chapter}{\listfigurename}
+    
+    \cleardoublepage%
+
+    %\listoftables
+    %\addcontentsline{toc}{chapter}{\listtablename}
+    %\cleardoublepage
+
+    %\printglossary[type=\acronymtype, title=Abbreviations]
+    \printacronyms[heading=chapter*, name=Acronyms]
+    \addcontentsline{toc}{chapter}{Acronyms}
+    \cleardoublepage%
+
+    \tableofcontents
+    \addcontentsline{toc}{chapter}{\contentsname}
+    \cleardoublepage%
+
+    \sloppy
+
+    \pagenumbering{arabic}% 1 2 3 4 5
+    \doublespacing{}% Double spacing between lines
+
+    \addtocontents{toc}{\protect\setcounter{tocdepth}{2}}
+
+    \pagestyle{fancy}
+    \fancyhf{}
+    \fancyhead[LE,RO]{\leftmark}
+    \fancyfoot[CE,CO]{\thepage}
+    \fancyfoot[RE,LO]{\classYear}
+    \fancyfoot[LE,RO]{\reportAuthor}
+
+    \renewcommand \thesection{\Roman{section}}
+    \renewcommand \thesubsection{\Roman{section}.\arabic{subsection}}
+    
+    % Main matter
+    \include{005-introduction}
+    \cleardoublepage%
+
+    \include{004-chapter1}
+    \cleardoublepage%
+
+    \include{004-chapter2}
+    \cleardoublepage%
+    
+    \include{004-chapter3}
+    \cleardoublepage%
+    
+    \include{004-chapter4}
+    \cleardoublepage%
+
+    % Back matter
+    \include{005-conclusion}
+    \cleardoublepage%
+
+    %\include{006-appendix}
+    %\cleardoublepage%
+    
+    \include{007-references}
+    \cleardoublepage%
+
+    \addtocontents{toc}{\protect\setcounter{tocdepth}{3}}
+
+  \end{pfe-enis}
+\end{document}

@@ -1,0 +1,24 @@
+@startuml
+scale 600 width
+
+[*] -> NoStatus
+[*] -> OnHold
+NoStatus   --> NotStarted: Assigned
+NoStatus   --> Obsolete : Aborted
+NotStarted --> Obsolete : Aborted 
+state InProgress {
+  state "Implement task" as subtask
+  NotStarted --> subtask: Picked
+  subtask--> subtask: Enhance
+  subtask--> Review : Test
+  Review--> subtask : Failed
+  subtask --> OnHold : Not Enough resources
+  OnHold --> subtask : Picked
+}
+
+Review --> Completed : Succeeded
+subtask --> Obsolete : Aborted
+
+Completed  --> Archived : Archive
+Obsolete   --> Archived : Archive
+@enduml

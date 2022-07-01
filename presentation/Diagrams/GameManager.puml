@@ -1,0 +1,18 @@
+@startuml
+MainManager *-- FileManager
+MainManager *-- CommunicationManager
+MainManager *-- ControlsManager
+MainManager *-- AvatarManager
+MainManager *-- InterfaceManager
+
+CommunicationManager *-- VoiceManager
+CommunicationManager *-- ChatManager
+
+HttpManager --* FileManager
+RpcManager --* MediationManager
+HttpManager --* MediationManager
+
+MediationManager --* InteropManager
+
+MediationManager --* MainManager
+@enduml

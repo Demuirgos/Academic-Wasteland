@@ -1,0 +1,30 @@
+@startuml
+Zone -> "Mediation System"                : Dispatch User in Zone event
+note left : User Moves inside a Zone handling process
+"Mediation System" -> "Zone System"       : Deliver User in Zone event
+"Zone System" -> "Zone System"            : Update State
+"Zone System" -> "Mediation System"       : Dispatch updated State
+group parrallel actions
+    == Action 1 ==
+    "Mediation System" ---> "Mediation System": remote RPC
+    note right: this action happends through the network
+    "Mediation System" ---> "Zone System"     : Sync Inner State
+    == Action 2 == 
+    loop For Every User in Zone
+        alt "Peer exists in cache"
+            "Communication System" -> "Communication System" : Reopen cached Peer
+        else 
+            "Mediation System" -> "Communication System" : Initiate RTC Call
+            "Communication System" -> "Mediation System" : Dispatch Handshake request
+            "Mediation System" -> "Singnaling System"    : Deliver Handshake request
+            "Singnaling System" --> "Mediation System"   : Receive Handshake request
+            "Mediation System" --> "Communication System": Answer  Handshake request
+            "Communication System" --> "Mediation System": Dispatch Handshake Answer
+            "Mediation System" --> "Singnaling System"   : Deliver Handshake Answer
+            "Singnaling System" -> "Mediation System"    : Receive Handshake Answer
+            "Mediation System" -> "Communication System" : Start RTC call 
+            "Communication System" -> "Communication System" : Cache Peer
+        end
+    end
+end
+@enduml

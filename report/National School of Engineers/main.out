@@ -1,0 +1,50 @@
+\BOOKMARK [0][-]{chapter*.3}{Dedication}{}% 1
+\BOOKMARK [0][-]{chapter*.4}{Acknowledgements}{}% 2
+\BOOKMARK [0][-]{chapter*.5}{Abstract}{}% 3
+\BOOKMARK [0][-]{chapter*.6}{R\351sum\351}{}% 4
+\BOOKMARK [0][-]{chapter*.7}{List of Figures}{}% 5
+\BOOKMARK [0][-]{chapter*.8}{Acronyms}{}% 6
+\BOOKMARK [0][-]{chapter*.9}{Contents}{}% 7
+\BOOKMARK [0][-]{chapter*.10}{Introduction}{}% 8
+\BOOKMARK [0][-]{chapter.1}{General Context}{}% 9
+\BOOKMARK [1][-]{section.1.1}{Presentation of the Host company}{chapter.1}% 10
+\BOOKMARK [2][-]{subsection.1.1.1}{The host Company}{section.1.1}% 11
+\BOOKMARK [2][-]{subsection.1.1.2}{Domain of Activities}{section.1.1}% 12
+\BOOKMARK [2][-]{subsection.1.1.3}{Organization chart}{section.1.1}% 13
+\BOOKMARK [1][-]{section.1.2}{Presentation of the Project}{chapter.1}% 14
+\BOOKMARK [2][-]{subsection.1.2.1}{The scope of the project}{section.1.2}% 15
+\BOOKMARK [2][-]{subsection.1.2.2}{Methodology of work}{section.1.2}% 16
+\BOOKMARK [2][-]{subsection.1.2.3}{Timeline of the project}{section.1.2}% 17
+\BOOKMARK [1][-]{section.1.3}{Conclusion}{chapter.1}% 18
+\BOOKMARK [0][-]{chapter.2}{Specification of requirements}{}% 19
+\BOOKMARK [1][-]{section.2.1}{Introduction}{chapter.2}% 20
+\BOOKMARK [1][-]{section.2.2}{Specification of requirements}{chapter.2}% 21
+\BOOKMARK [2][-]{subsection.2.2.1}{Actors in the system}{section.2.2}% 22
+\BOOKMARK [2][-]{subsection.2.2.2}{Functional requirements}{section.2.2}% 23
+\BOOKMARK [1][-]{section.2.3}{Specification of non-functional requirements}{chapter.2}% 24
+\BOOKMARK [1][-]{section.2.4}{Conclusion}{chapter.2}% 25
+\BOOKMARK [0][-]{chapter.3}{Design}{}% 26
+\BOOKMARK [1][-]{section.3.1}{Introduction}{chapter.3}% 27
+\BOOKMARK [1][-]{section.3.2}{Preliminary Design}{chapter.3}% 28
+\BOOKMARK [2][-]{subsection.3.2.1}{Logical Architecture}{section.3.2}% 29
+\BOOKMARK [2][-]{subsection.3.2.2}{Physical Architecture}{section.3.2}% 30
+\BOOKMARK [1][-]{section.3.3}{Detailed Design}{chapter.3}% 31
+\BOOKMARK [2][-]{subsection.3.3.1}{Client architecture}{section.3.3}% 32
+\BOOKMARK [2][-]{subsection.3.3.2}{Server Architecture}{section.3.3}% 33
+\BOOKMARK [1][-]{section.3.4}{Bundling}{chapter.3}% 34
+\BOOKMARK [1][-]{section.3.5}{Conclusion}{chapter.3}% 35
+\BOOKMARK [0][-]{chapter.4}{Programming}{}% 36
+\BOOKMARK [1][-]{section.4.1}{Introduction}{chapter.4}% 37
+\BOOKMARK [1][-]{section.4.2}{Development environment}{chapter.4}% 38
+\BOOKMARK [2][-]{subsection.4.2.1}{Tooling}{section.4.2}% 39
+\BOOKMARK [2][-]{subsection.4.2.2}{Organization}{section.4.2}% 40
+\BOOKMARK [2][-]{subsection.4.2.3}{Technologies}{section.4.2}% 41
+\BOOKMARK [1][-]{section.4.3}{Application}{chapter.4}% 42
+\BOOKMARK [2][-]{subsection.4.3.1}{Avatar Selection}{section.4.3}% 43
+\BOOKMARK [2][-]{subsection.4.3.2}{Spaces Selection}{section.4.3}% 44
+\BOOKMARK [2][-]{subsection.4.3.3}{Spaces Exploration}{section.4.3}% 45
+\BOOKMARK [2][-]{subsection.4.3.4}{Netherverse in Action}{section.4.3}% 46
+\BOOKMARK [1][-]{section.4.4}{Tests}{chapter.4}% 47
+\BOOKMARK [1][-]{section.4.5}{Conclusion}{chapter.4}% 48
+\BOOKMARK [0][-]{chapter*.70}{Conclusion}{}% 49
+\BOOKMARK [0][-]{section*.72}{References}{}% 50

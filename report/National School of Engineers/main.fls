@@ -1,0 +1,708 @@
+PWD /home/demuirgos/repos/report/report/National School of Engineers
+INPUT /etc/texmf/web2c/texmf.cnf
+INPUT /usr/share/texmf/web2c/texmf.cnf
+INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
+INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/main.tex
+OUTPUT /home/demuirgos/repos/report/report/National School of Engineers/main.log
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/ensa-pfe-report.cls
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/ensa-pfe-report.cls
+INPUT /usr/share/texlive/texmf-dist/tex/latex/silence/silence.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/silence/silence.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/report.cls
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/report.cls
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
+INPUT /usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
+INPUT /usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/environ/environ.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/environ/environ.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/chngcntr/chngcntr.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/chngcntr/chngcntr.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+INPUT /usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+INPUT /usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/needspace/needspace.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/needspace/needspace.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+INPUT /usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/footmisc/footmisc.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/footmisc/footmisc.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/titlesec/ttlkeys.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/titlesec/ttlkeys.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/titlesec/block.tss
+INPUT /usr/share/texlive/texmf-dist/tex/latex/titlesec/block.tss
+INPUT /usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/ms/everyshi.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/ms/everyshi.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbskins.code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbskinsjigsaw.code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
+INPUT /usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
+INPUT /usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/varioref.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/varioref.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+INPUT /usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjcalc.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjcalc.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/adjustbox/trimclip.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/adjustbox/trimclip.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/collectbox/collectbox.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/collectbox/collectbox.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/acro/acro.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/acro/acro.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3-code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3-code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/unicode-data/UnicodeData.txt
+INPUT /usr/share/texlive/texmf-dist/tex/generic/unicode-data/CaseFolding.txt
+INPUT /usr/share/texlive/texmf-dist/tex/generic/unicode-data/SpecialCasing.txt
+INPUT /usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/l3experimental/l3sort/l3sort.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/l3experimental/l3sort/l3sort.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/oberdiek/zref-abspage.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/oberdiek/zref-abspage.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/oberdiek/zref-base.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/oberdiek/zref-base.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/translations/translations.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/translations/translations.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/cnltx/cnltx-base.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/cnltx/cnltx-base.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/pgfopts/pgfopts.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/pgfopts/pgfopts.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/koma-script/scrlfile.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/koma-script/scrlfile.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/ctable/ctable.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/ctable/ctable.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/rotating.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/rotating.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/seqsplit/seqsplit.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/seqsplit/seqsplit.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/nowidow/nowidow.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/nowidow/nowidow.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/minted/minted.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/minted/minted.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/fvextra/fvextra.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/fvextra/fvextra.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/upquote/upquote.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/upquote/upquote.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/lineno/lineno.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/lineno/lineno.sty
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmtt12.tfm
+INPUT /usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/shellesc.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/shellesc.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/shellesc.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/ifplatform/ifplatform.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/ifplatform/ifplatform.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/catchfile.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/catchfile.sty
+INPUT /dev/null
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/main.w18
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/main.w18
+INPUT /usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.tex
+INPUT /usr/share/texlive/texmf-dist/tex/latex/framed/framed.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/framed/framed.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-dm.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-dm.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-compat.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-compat.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-bibtex.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-bibtex.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
+INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
+INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
+INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
+INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/cbx/numeric.cbx
+INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/cbx/numeric.cbx
+INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.cfg
+INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.cfg
+OUTPUT /home/demuirgos/repos/report/report/National School of Engineers/000-commands.aux
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/000-commands.tex
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/000-commands.tex
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/main.aex
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/main.aex
+INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/main.aux
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/main.aux
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/002-top_matter.aux
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/002-top_matter.aux
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/003-thanks.aux
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/003-thanks.aux
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/005-Abstract.aux
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/005-Abstract.aux
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/005-introduction.aux
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/005-introduction.aux
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/004-chapter1.aux
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/004-chapter1.aux
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/004-chapter2.aux
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/004-chapter2.aux
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/004-chapter3.aux
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/004-chapter3.aux
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/004-chapter4.aux
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/004-chapter4.aux
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/005-conclusion.aux
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/005-conclusion.aux
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/007-references.aux
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/007-references.aux
+OUTPUT /home/demuirgos/repos/report/report/National School of Engineers/main.aux
+INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr7t.tfm
+INPUT /usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+INPUT /usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+INPUT /usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+INPUT /usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/ms/ragged2e.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/ms/ragged2e.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/ms/everysel.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/ms/everysel.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/main.out
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/main.out
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/main.out
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/main.out
+OUTPUT /home/demuirgos/repos/report/report/National School of Engineers/main.pdf
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/main.out
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/main.out
+OUTPUT /home/demuirgos/repos/report/report/National School of Engineers/main.out
+INPUT /usr/share/texlive/texmf-dist/tex/latex/oberdiek/pdflscape.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/oberdiek/pdflscape.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
+INPUT /usr/share/texlive/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
+OUTPUT /home/demuirgos/repos/report/report/National School of Engineers/main-blx.bib
+OUTPUT /home/demuirgos/repos/report/report/National School of Engineers/002-top_matter.aux
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/002-top_matter.tex
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/002-top_matter.tex
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr7t.tfm
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/./Images/ensatetouan.png
+INPUT ./Images/ensatetouan.png
+INPUT ./Images/ensatetouan.png
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr7t.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmbc7t.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr7t.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/./Images/Nethermind.png
+INPUT ./Images/Nethermind.png
+INPUT ./Images/Nethermind.png
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr7t.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmbc7t.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr7t.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmrc7t.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmbc7t.vf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
+INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmb7t.vf
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmr7t.vf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmb7t.vf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmb7t.vf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmb7t.vf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmbc7t.vf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmr7t.vf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmb7t.vf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmrc7t.vf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
+OUTPUT /home/demuirgos/repos/report/report/National School of Engineers/003-thanks.aux
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/003-thanks.tex
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/003-thanks.tex
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr7t.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr7t.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr7t.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmri7t.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmrc7t.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmb7t.vf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmri7t.vf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmri8r.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmrc7t.vf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
+OUTPUT /home/demuirgos/repos/report/report/National School of Engineers/005-Abstract.aux
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/005-Abstract.tex
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/005-Abstract.tex
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/main.lof
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/main.lof
+OUTPUT /home/demuirgos/repos/report/report/National School of Engineers/main.lof
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/main.toc
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/main.toc
+OUTPUT /home/demuirgos/repos/report/report/National School of Engineers/main.toc
+OUTPUT /home/demuirgos/repos/report/report/National School of Engineers/005-introduction.aux
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/005-introduction.tex
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/005-introduction.tex
+INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
+INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
+OUTPUT /home/demuirgos/repos/report/report/National School of Engineers/004-chapter1.aux
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/004-chapter1.tex
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/004-chapter1.tex
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmr7t.vf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmb7t.vf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr7t.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmbi7t.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/./Images/Nethermind.png
+INPUT ./Images/Nethermind.png
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmri7t.tfm
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/./Images/NethermindActs.png
+INPUT ./Images/NethermindActs.png
+INPUT ./Images/NethermindActs.png
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmr7t.vf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmb7t.vf
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmri7t.vf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmri8r.tfm
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/./Images/Team-Hierarchy.jpg
+INPUT ./Images/Team-Hierarchy.jpg
+INPUT ./Images/Team-Hierarchy.jpg
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/tasks-methodology.jpeg
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/tasks-methodology.jpeg
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/tasks-methodology.jpeg
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/./Images/task-life-cycle.png
+INPUT ./Images/task-life-cycle.png
+INPUT ./Images/task-life-cycle.png
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/./Images/Ganttz.png
+INPUT ./Images/Ganttz.png
+INPUT ./Images/Ganttz.png
+OUTPUT /home/demuirgos/repos/report/report/National School of Engineers/004-chapter2.aux
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/004-chapter2.tex
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/004-chapter2.tex
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/./Images/usecase-chart1.png
+INPUT ./Images/usecase-chart1.png
+INPUT ./Images/usecase-chart1.png
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/./Images/seqdiag/User registration.png
+INPUT ./Images/seqdiag/User registration.png
+INPUT ./Images/seqdiag/User registration.png
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/./Images/seqdiag/User Authentication.png
+INPUT ./Images/seqdiag/User Authentication.png
+INPUT ./Images/seqdiag/User Authentication.png
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/./Images/seqdiag/User logout.png
+INPUT ./Images/seqdiag/User logout.png
+INPUT ./Images/seqdiag/User logout.png
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/./Images/seqdiag/User Room join.png
+INPUT ./Images/seqdiag/User Room join.png
+INPUT ./Images/seqdiag/User Room join.png
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/./Images/seqdiag/User Room exploration.png
+INPUT ./Images/seqdiag/User Room exploration.png
+INPUT ./Images/seqdiag/User Room exploration.png
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/./Images/seqdiag/User Room leave.png
+INPUT ./Images/seqdiag/User Room leave.png
+INPUT ./Images/seqdiag/User Room leave.png
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/./Images/seqdiag/User Interaction.png
+INPUT ./Images/seqdiag/User Interaction.png
+INPUT ./Images/seqdiag/User Interaction.png
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/./Images/seqdiag/Object Interaction.png
+INPUT ./Images/seqdiag/Object Interaction.png
+INPUT ./Images/seqdiag/Object Interaction.png
+OUTPUT /home/demuirgos/repos/report/report/National School of Engineers/004-chapter3.aux
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/004-chapter3.tex
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/004-chapter3.tex
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/./Images/ECS9ArchitectureR2.jpeg
+INPUT ./Images/ECS9ArchitectureR2.jpeg
+INPUT ./Images/ECS9ArchitectureR2.jpeg
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/./Images/physarch.png
+INPUT ./Images/physarch.png
+INPUT ./Images/physarch.png
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/./Images/ActionsDiag.png
+INPUT ./Images/ActionsDiag.png
+INPUT ./Images/ActionsDiag.png
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/./Images/clientISdeArch.png
+INPUT ./Images/clientISdeArch.png
+INPUT ./Images/clientISdeArch.png
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/./Images/SysDiagOverview.png
+INPUT ./Images/SysDiagOverview.png
+INPUT ./Images/SysDiagOverview.png
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/./Images/SystemInteraction.png
+INPUT ./Images/SystemInteraction.png
+INPUT ./Images/SystemInteraction.png
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/./Images/UserZoned.png
+INPUT ./Images/UserZoned.png
+INPUT ./Images/UserZoned.png
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/./Images/FileImport.png
+INPUT ./Images/FileImport.png
+INPUT ./Images/FileImport.png
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/./Images/WebRTCTriangle.png
+INPUT ./Images/WebRTCTriangle.png
+INPUT ./Images/WebRTCTriangle.png
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/./Images/P2P.png
+INPUT ./Images/P2P.png
+INPUT ./Images/P2P.png
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/./Images/WebrtcProc.png
+INPUT ./Images/WebrtcProc.png
+INPUT ./Images/WebrtcProc.png
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/./Images/ServerArch.png
+INPUT ./Images/ServerArch.png
+INPUT ./Images/ServerArch.png
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/./Images/filesDBseq.png
+INPUT ./Images/filesDBseq.png
+INPUT ./Images/filesDBseq.png
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/./Images/authService.png
+INPUT ./Images/authService.png
+INPUT ./Images/authService.png
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/./Images/signalingAnimations.png
+INPUT ./Images/signalingAnimations.png
+INPUT ./Images/signalingAnimations.png
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/./Images/networkingTransform.png
+INPUT ./Images/networkingTransform.png
+INPUT ./Images/networkingTransform.png
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/./Images/rtccallinteroplayer.png
+INPUT ./Images/rtccallinteroplayer.png
+INPUT ./Images/rtccallinteroplayer.png
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/./Images/ActualFileImport.png
+INPUT ./Images/ActualFileImport.png
+INPUT ./Images/ActualFileImport.png
+OUTPUT /home/demuirgos/repos/report/report/National School of Engineers/004-chapter4.aux
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/004-chapter4.tex
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/004-chapter4.tex
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/./Images/VscodeScreenshot.jpg
+INPUT ./Images/VscodeScreenshot.jpg
+INPUT ./Images/VscodeScreenshot.jpg
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/./Images/UnityScreenshot.jpg
+INPUT ./Images/UnityScreenshot.jpg
+INPUT ./Images/UnityScreenshot.jpg
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/./Images/EdgeScreenshot.jpg
+INPUT ./Images/EdgeScreenshot.jpg
+INPUT ./Images/EdgeScreenshot.jpg
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/./Images/SlackImage.jpeg
+INPUT ./Images/SlackImage.jpeg
+INPUT ./Images/SlackImage.jpeg
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/./Images/NotionImage.png
+INPUT ./Images/NotionImage.png
+INPUT ./Images/NotionImage.png
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/./Images/GithubImage.jpeg
+INPUT ./Images/GithubImage.jpeg
+INPUT ./Images/GithubImage.jpeg
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/./Images/Showcase/FirstScreenApp.jpg
+INPUT ./Images/Showcase/FirstScreenApp.jpg
+INPUT ./Images/Showcase/FirstScreenApp.jpg
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/./Images/Showcase/SecondScreenApp.jpg
+INPUT ./Images/Showcase/SecondScreenApp.jpg
+INPUT ./Images/Showcase/SecondScreenApp.jpg
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/./Images/Showcase/ThirdScreenApp.jpg
+INPUT ./Images/Showcase/ThirdScreenApp.jpg
+INPUT ./Images/Showcase/ThirdScreenApp.jpg
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/./Images/Showcase/FourthScreenApp.jpg
+INPUT ./Images/Showcase/FourthScreenApp.jpg
+INPUT ./Images/Showcase/FourthScreenApp.jpg
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/./Images/Showcase/FifthScreenApp.jpg
+INPUT ./Images/Showcase/FifthScreenApp.jpg
+INPUT ./Images/Showcase/FifthScreenApp.jpg
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/./Images/Showcase/sixthScreenApp.jpg
+INPUT ./Images/Showcase/sixthScreenApp.jpg
+INPUT ./Images/Showcase/sixthScreenApp.jpg
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/./Images/Showcase/sixthAndHalfScreenApp.jpg
+INPUT ./Images/Showcase/sixthAndHalfScreenApp.jpg
+INPUT ./Images/Showcase/sixthAndHalfScreenApp.jpg
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/./Images/Showcase/EighthScreenApp.jpg
+INPUT ./Images/Showcase/EighthScreenApp.jpg
+INPUT ./Images/Showcase/EighthScreenApp.jpg
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/./Images/Showcase/NinthScreenApp.jpg
+INPUT ./Images/Showcase/NinthScreenApp.jpg
+INPUT ./Images/Showcase/NinthScreenApp.jpg
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/./Images/Showcase/TwelvethScreenApp.jpg
+INPUT ./Images/Showcase/TwelvethScreenApp.jpg
+INPUT ./Images/Showcase/TwelvethScreenApp.jpg
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/./Images/Showcase/EleventhScreenApp.jpg
+INPUT ./Images/Showcase/EleventhScreenApp.jpg
+INPUT ./Images/Showcase/EleventhScreenApp.jpg
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/./Images/Showcase/AllHandsImage1.png
+INPUT ./Images/Showcase/AllHandsImage1.png
+INPUT ./Images/Showcase/AllHandsImage1.png
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/./Images/Showcase/AllHandsImage2.png
+INPUT ./Images/Showcase/AllHandsImage2.png
+INPUT ./Images/Showcase/AllHandsImage2.png
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/./Images/Showcase/ExhibitImage.jpg
+INPUT ./Images/Showcase/ExhibitImage.jpg
+INPUT ./Images/Showcase/ExhibitImage.jpg
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/./Images/benchmark.jpeg
+INPUT ./Images/benchmark.jpeg
+INPUT ./Images/benchmark.jpeg
+OUTPUT /home/demuirgos/repos/report/report/National School of Engineers/005-conclusion.aux
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/005-conclusion.tex
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/005-conclusion.tex
+OUTPUT /home/demuirgos/repos/report/report/National School of Engineers/007-references.aux
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/007-references.tex
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/007-references.tex
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/main.aux
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/002-top_matter.aux
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/002-top_matter.aux
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/003-thanks.aux
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/003-thanks.aux
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/005-Abstract.aux
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/005-Abstract.aux
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/005-introduction.aux
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/005-introduction.aux
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/004-chapter1.aux
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/004-chapter1.aux
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/004-chapter2.aux
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/004-chapter2.aux
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/004-chapter3.aux
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/004-chapter3.aux
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/004-chapter4.aux
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/004-chapter4.aux
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/005-conclusion.aux
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/005-conclusion.aux
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/007-references.aux
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/007-references.aux
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/main.out
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/main.out
+INPUT /home/demuirgos/repos/report/report/National School of Engineers/main.run.xml
+OUTPUT /home/demuirgos/repos/report/report/National School of Engineers/main.run.xml
+INPUT /usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb

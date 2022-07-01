@@ -1,0 +1,10 @@
+@startuml
+Editor -> Mono : Start Phase 1
+Mono -> Mono : Compile C# to IL
+Mono -> IL2CPP : start phase 2
+IL2CPP -> IL2CPP : Transpiled IL to Cpp
+IL2CPP -> Emscripten : start phase 3
+Emscripten --> Emscripten : Compile Cpp to WASM
+Emscripten --> Editor : Emit result code
+Editor --> Editor : Bundle Jslib + WASM
+@enduml

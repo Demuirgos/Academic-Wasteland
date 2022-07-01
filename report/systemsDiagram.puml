@@ -1,0 +1,47 @@
+@startuml
+package "3DSpace System" {
+    package "Actor Systems" {
+        node "Interface Manager" {
+            InterfaceSystem <--> [Mediation System]
+        }
+        node "Controls Manager" {
+            ControlsSystem <--> [Mediation System]
+        }
+        node "Text Chat Manager" {
+            TextSystem <--> [Mediation System]
+        }
+        node "Voice Chat Manager" {
+            VoiceSystem <--> [Mediation System]
+        }
+        node "Transaction Manager" {
+            TransactionSystem <--> [Mediation System]
+        }
+
+    }
+    
+    package "Wroker Systems" {
+        node "Http System" {
+            Web <--> HttpSystem
+            HttpSystem <-left-> [Mediation System]
+        }
+        node "Avatar System" {
+            AvatarSystem <-left-> [Mediation System]
+        }
+        node "Statisitcs System" {
+            StatisticsSystem <-left-> [Mediation System]
+        }
+        node "Zone System" {
+            ZoneSystem <-left-> [Mediation System]
+        }
+        node "Blockchain System" {
+            BlockchainSystem <-left-> [Mediation System]
+        }
+    }
+    [External Systems] <-up-> [Mediation System]
+
+    package "External Systems" {
+    }
+    node "Mediation System" {
+    }
+}
+@enduml

@@ -1,0 +1,570 @@
+[INCLUDE=presentation]
+Title         : End Of Study Project  
+Sub Title     : Metaverse Solution
+Author        : Ayman Bouchareb
+Affiliation   : National School of Applied Sciences
+Email         : Ayman@nethermind.io
+Logo          : Images/Nethermind.png
+Reveal Theme  : solarized
+Beamer Theme  : london
+
+[TITLE]
+
+## Graduation Project  
+### For acquiring An Engineering Diploma
+#### Computer Sciences 
+
+|| 
+|:-:|
+| Implementation of a Cross-User shared experience |
+|---|
+~ Begin Columns {margin-top:-25%}
+~ Column {width:20%}
+![CompanyLogo]
+~
+~ Column 
+~
+~ Column {width:20%}
+![SchoolLogo] 
+~
+~ End Columns
+...
+{ text-align: center; font-size : xx-large;  }
+
+Presented On : 25th June 2022 
+{ text-align: center; font-size : small;  }
+~ Begin Columns
+~ Column
+  ### Jury Members : 
+
+  * {font-size: x-large; font-weight:bolder} Mr. MESMOUDI Yasser
+  * {font-size: x-large; font-weight:bolder} Mr. CHKOURI Mohamed Yassin 
+~
+~ Column
+  ### Prepared By :
+
+  * {font-size: x-large; font-weight:bolder} BOUCHAREB Ayman 
+~
+~ Column
+  ### supervisors :
+
+  * {font-size: x-large;} Professional Supervisor :  \
+
+  **Mr. Borys Tam** 
+  
+  * {font-size: x-large;}  Academic supervisor:  \
+  
+  **Mr. EL YOUNOUSSI Yacine** 
+~
+~ End Columns
+
+Academic Year : 2021-2022 
+{ text-align: center; font-size: small; } 
+
+[CompanyLogo]: Images/Nethermind.png {width:100%}
+[SchoolLogo]: Images/ensatetouan.png {width:100%}
+
+# Content
+
+[TOC]
+
+~ Begin Vertical
+# Introduction
+
+## Metaverse
+~ Begin Columns
+~ Column {width:60%; vertical-align:middle} 
+Metaverse technologies are : 
+
+* {.fragment} Immersement-based
+* {.fragment} Gamified in nature
+* {.fragment} Blockchain-based?
+~
+~ Column {.fragment; width:40%}
+![VRPerson]
+~
+~ End Columns
+
+[VRPerson]: Images/VRBoy.png {height:100%; vertical-align:middle} 
+
+## Blockchain
+
+Our main Target is : 
+
+* {.fragment} Ethereum
+
+~ Begin Columns {.fragment} 
+~ Column {width:20%}
+![EthereumLogo] 
+~
+~ Column
+![Ethereum] 
+~
+~ End Columns
+
+[Ethereum]: Images/Ethereum.png {width:100%}
+[EthereumLogo]: Images/EthereumLogo.png {width:100%; margin-bottom:50%; }
+
+~ End Vertical
+
+~ Begin Vertical
+# Context
+## Company presentation
+
+[Nethermind] is a software development Company that is focused on the development of blockchain applications.
+![Logo]
+Its principale activities include : 
+
+* {.fragment} **DeFI**/**Finance**:
+  providing solutions in the space of decentrelized finance.
+* {.fragment} **Tooling**:
+  providing tooling for the development of blockchain applications.
+* {.fragment} **Research**:
+  actively researching new technologies and providing them to the community.
+
+
+[Nethermind]: http://Nethermind.io
+[Logo]: Images/Nethermind.png {display: block; margin-left: auto; margin-right: auto; width: 20%; }
+
+## Atlantis team { -; toc:clear; }
+
+The metaverse team is called : Atlantis
+![Atlantis]
+
+[Atlantis]: Images/Hiererachy.png {display: block; margin-left: auto; margin-right: auto; width: 100%;}
+
+## Project presentation
+The project is called : Netherverse 
+~ Begin Columns
+~ Column {width: 65%;}
+Netherverse's main Aspects :
+
+* {.fragment} Communication: Voice, Chat, etc.
+* {.fragment} Interaction: Emotes, reacts etc.
+* {.fragment} Exploration: 3D spaces, etc.
+* {.fragment} Decentrelization: Transactions, etc.
+~
+~ Column
+![Netherverse]
+~
+~ End Columns
+
+[Netherverse]: Images/ProjectAspects.png {width: 150%; vertical-align:middle; margin-top: 200px;}
+
+## Methodology of work
+
+Customized Method based on Agile : 
+~ Begin Columns {margin-top: -175px;}
+~ Column {width: 30%;}
+Task States :
+
+* {.fragment} No Status.
+* {.fragment} Not Started | On-Hold.
+* {.fragment} In Progress.
+* {.fragment} Obsolete | Completed.
+* {.fragment} Archived.
+~
+~ Column
+![Taskology]
+~
+~ End Columns
+
+[Taskology]: Images/task-life-cycle.png {width: 150%; vertical-align:middle; margin-top: 200px;}
+~ End Vertical
+
+~ Begin Vertical
+# Requirements
+
+## Actors
+
+~ Begin Columns 
+~ Column {width: 40%;}
+The actors involved are : 
+
+* Hosts
+* Visitors
+* Nethermind
+~
+~ Column
+![Actors]
+~
+~ End Columns
+
+[Actors]: Images/Actors.png  {width: 150%; vertical-align:middle; margin-top: 150px; margin-left: 5%;}
+
+
+## Functional requirements
+
+~ Begin Columns {margin-top:-15%} 
+~ Column {width:50%}
+On the Client side we have use cases Contexts : 
+
+* Host : Create spaces, Modify spaces, etc 
+
+* Vistors : Join spaces, Leave spaces, etc
+~
+~ Column {width:50%}
+![Usecases]
+~
+~ End Columns
+
+[Usecases]: Images/Usecase.png  {width: 150%; vertical-align:middle; margin-top: 150px; margin-left: 5%;}
+
+## Client side : Visitor case { -; toc:clear; }
+
+Visitor's Main Actions are : 
+~ Begin Columns 
+~ Column {width : 30%;}
+
+* Register
+* Authenticate
+* Join
+* Explore 
+* Leave
+~
+~ Column 
+![VUsecaseDiagram]
+~
+~ End Columns
+
+[VUsecaseDiagram]: Images/VisitorUsecase.png  {width: 100%;}
+
+## Client side : Host case { -; toc:clear; }
+
+Hosts' Main Actions are : 
+~ Begin Columns {height : 80%;}
+~ Column {width : 30%;}
+
+* Register
+* CRUD Space
+* Publish Space
+* Monitor Space
+* Suspend Space
+~
+~ Column 
+![HUsecaseDiagram]
+~
+~ End Columns
+
+[HUsecaseDiagram]: Images/HostUsecase.png  {width: 100%;}
+
+## Example : Authenticate Process { -; toc:clear; }
+
+Overview of the login Process : 
+~ Begin Columns {height : 80%;}
+~ Column {.fragment; width : 40%;} 
+
+* Database based authentication : 
+
+![Web2Login]
+~
+~ Column {width : 20%;}
+~
+~ Column {.fragment; width : 40%;}
+
+* Blockchain based authentication : 
+
+![Web3Login]
+~
+~ End Columns
+
+[Web3Login]: Images/Web3Auth.png  {width: 100%;}
+[Web2Login]: Images/Web2Auth.png  {width: 100%;}
+
+## Non-Functional Requirements
+
+The Non-Functional Requirements are :
+
+* {.fragment} Maintainability
+* {.fragment} Scalability
+* {.fragment} Security
+* {.fragment} Performance
+
+~ End Vertical
+
+~ Begin Vertical
+# Design
+
+## Logical architecture { -; toc:clear; }
+
+**Entity Component System**
+
+~ Begin Columns 
+~ Column {width:20%}
+* {.fragment} Entity
+* {.fragment} Component 
+* {.fragment} System
+~
+~ Column 
+![SystemsMap]
+~
+~ End Columns
+
+[SystemsMap]: Images/GameManager.png {width: 100%;}
+
+## Physical architecture
+
+The project mixes between :
+~ Begin Columns 
+~ Column {width:35%}
+* {.fragment} HTTP Server
+* {.fragment} P2P Connections
+* {.fragment} RPC Server
+~
+~ Column 
+![Machines]
+~
+~ End Columns
+[Machines]: Images/PhysicalArchitecture.png {.fragment; display: block; margin-left: auto; margin-right: auto; width: 65%; }
+
+## In depth Look 
+![LogicalFlow]
+[LogicalFlow]: Images/SystemInteraction.png {width: 100%;} 
+
+## Client architecture { -; toc:clear; }
+Client Side (Browser) has **2** Parts : 
+~ Begin Columns
+~ Column { width:35%; }
+* { .fragment } WebGL System 
+* { .fragment } WebRTC System 
+~
+~ Column 
+![ClientSide]
+~
+~ End Columns
+
+[ClientSide]: Images/ClientSideArchitecture.png {.fragment; width: 100%; display: block; margin-left: auto; margin-right: auto; margin-top: 10%; }   
+
+## WebGL System { -; toc:clear; }
+
+The webgl build is the main Interactive part, it has : 
+
+* Rendering capabilities
+* Networking capabilities
+
+![Systems]
+
+[Systems]:  Images/SystemsInteractions.png {.fragment; width: 100%; }
+
+## WebRTC System { -; toc:clear; }
+
+The WebRTC build is the main communication part, it has : 
+
+* Voice chat capabilities
+* Data channel capabilities
+
+![Communication]
+
+[Communication]:  Images/WebRTCTriangle.png {.fragment; width: 100%; }
+
+## Server architecture { -; toc:clear; }
+
+Server Side (Network) has **2** Parts : 
+~ Begin Columns
+~ Column { width:35%; }
+* { .fragment } HTTP Services 
+* { .fragment } RPC Services 
+~
+~ Column 
+![ServerSide]
+~
+~ End Columns
+
+[ServerSide]: Images/ServerSideArchitecture.png {.fragment; width: 100%; display: block; margin-left: auto; margin-right: auto; margin-top: 10%; }  
+
+## RPC Server { -; toc:clear; }
+~ Begin Columns
+~ Column { width:35%; }
+* { .fragment } Networking Service
+* { .fragment } Signaling Service 
+~
+~ Column 
+![EmotesProcess] 
+~
+~ End Columns
+
+[EmotesProcess]: Images/SignalingAnimations.png {.fragment; width: 100%; display: block; margin-left: auto; margin-right: auto; margin-top: 10%; }
+
+## Http Server { -; toc:clear; }
+~ Begin Columns
+~ Column { width:35%; }
+* { .fragment } Authentication Service
+* { .fragment } Storage Service
+~
+~ Column 
+![FileManipulation]
+~
+~ End Columns
+
+[FileManipulation]: Images/FileStorage.png {.fragment; width: 100%; display: block; margin-left: auto; margin-right: auto; margin-top: 10%;} 
+
+## Example :  { -; toc:clear; }
+**File Upload** in details (Interop + networked interaction)  :
+
+![FileStorage]
+
+[FileStorage]: Images/ActualFileImport.png {.fragment; width: 125%; display: block; margin-left: auto; margin-right: auto;}
+
+~ End Vertical
+
+
+~ Begin Vertical
+# Programming
+
+## Code
+
+Code snippets :
+~ Begin Columns
+~ Column  {.fragment}
+
+* C\# Code snippet :
+``` csharp
+if(!photonView.IsMine) return;
+string url = PhotonNetwork.LocalPlayer
+    .CustomProperties["Avatar"] as string
+    ?? "DefaultAvatar";
+if(IsValidRPMUrl(url.ToLower())
+    && PhotonNetwork.IsConnected) {
+    avatarNameHolder.transform
+        .parent.gameObject
+        .SetActive(false);
+    photonView.RPC(
+        "SetupAvatar",
+        RpcTarget.AllBuffered,
+        photonView.Owner.ActorNumber,
+        photonView.Owner.NickName, url);
+} 
+```
+{width:90%; margin-left:-3%}
+~
+~ Column {.fragment}
+* Javascript Code snippet :
+``` Javascript
+var data = JSON.parse(message);
+switch (data.Action) {
+    case Handshake  :
+        handleJoin(data.Src, data.Room);
+        break;
+    case Offer      :
+        handleOffer(data.Src, data.Body); 
+        break;
+    case Answer     :
+        handleAnswer(data.Src, data.Body);
+        break;
+    case Disconnect :
+        handleLeave(data.Src, data.Room);
+        break; 
+}
+``` 
+{width:90%; margin-right:-3%}
+~
+~ End Columns
+
+## Tooling  
+
+Set Tools Used :
+~ Begin Columns
+~ Column { width:35%; }
+
+* Visual Studio Code :\
+        customizable Code Editor 
+<br><br><br>
+* Unity 3D engine :\
+        use ready Game Engine
+<br><br>
+~
+~ Column 
+![Editor]
+![Engine]
+~
+~ End Columns
+
+[Editor]: Images/VSCodeIcon.png {.fragment; width: 30%; display: block; margin-left: auto; margin-right: auto; }
+[Engine]: Images/UnityIcon.png {.fragment; width: 30%; display: block; margin-left: auto; margin-right: auto; margin-top: 30%;}
+
+## Vistual Studio Code  
+![Vscode]
+[Vscode]: Images/VscodeScreenshot.jpg {.fragment; width: 100%; display: block; margin-left: auto; margin-right: auto; margin-top: 10%;}
+
+## Unity 3D engine
+![Unity]
+[Unity]: Images/UnityScreenshot.jpg {.fragment; width: 100%; display: block; margin-left: auto; margin-right: auto; margin-top: 10%;}
+
+## SDKs
+Software development Kits used : 
+
+~ Begin Figure 
+~ Begin SubFigureRow { vertical-align: bottom }
+~ SubFigure { #fig-subfig1; .fragment; caption:"Moralis : Blockchain SDK" }
+![Moralis]
+~
+~ SubFigure { #fig-subfig2; .fragment; caption:"Photon : Networking  SDK"; }
+![Photon]
+~
+~ SubFigure { #fig-subfig2; .fragment; caption:"Ready Player Me : Avatar SDK"; }
+![ReadyPlayerMe]
+~
+~ End SubFigureRow
+~ End Figure
+
+[Moralis]: Images/MoralisLogo.png {.fragment; width: 100%; }
+[Photon]: Images/PhotonLogo.png {.fragment; width: 100%; }
+[ReadyPlayerMe]: Images/AvatarLogo.png {; width: 100%; }
+
+## Bundling
+
+~ Begin Figure { .fragment; caption:"Ready Player Me : Compilation phase of WebGL targeted Build"; }
+![WebGlBuild]
+~ End Figure
+
+[WebGlBuild]: Images/CompilationPhase.png
+
+## Test  
+~ Begin Figure
+~ Begin SubFigureRow { vertical-align: bottom }
+~ SubFigure { #fig-subfig1; .fragment; caption:"AllHands Event test" }
+![AllHands]
+~
+~ End SubFigureRow
+~ End Figure
+
+[AllHands]: Images/AllHandsImage1.png
+
+## Test  
+
+~ Begin Columns
+~ Column
+
+~~ Begin Figure { #fig-subfig1; .fragment; caption:"Benchmark results" }
+![Benchmark]
+~~ End Figure
+~
+~ Column {vertical-align:middle; .fragment;}
+```
+a room has N players.
+a player sends F messages per second
+average message size is X 
+an average player spends H hours
+per month on your game
+```
+
+``` { #eq-alignment; caption:"Alignment example" }
+Cost(ccu) = X * F * N * H * 60 * 60
+```
+~
+~ End Columns
+
+
+[Benchmark]: Images/benchmark.jpeg
+~ End Vertical
+
+
+~ Begin Vertical
+# Demo
+
+# Netherverse 
+![AllHands]
+
+~ End Vertical
+
+## Thank you

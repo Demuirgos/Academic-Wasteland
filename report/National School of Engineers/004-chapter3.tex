@@ -1,0 +1,266 @@
+\chapter{Design}%
+\label{chap:chapter_three}
+\vspace{25pt} {
+  \hrulefill \\%
+  This chapter documents the design of the system, and the technical decisions made.\\%
+  Every software goes through a phase of design, and the design process is one of the most important 
+  part of the software development process. since it give us a clear picture of the system, and the
+  parts involved in it.
+  For our program we made the design in two phases, an Overview and a Detailed Design.\\%
+  In the overview we discuss the logical architecture being user i.e : Entity Component Systems Architecture,
+  and the Physical architecture being the hardware.\\%
+  Then in the in depth phase we discuss the various sub-systems involved in delivering the functionalities of the system.
+  and how they interact with each other, and how they are connected to the main system.
+  \hrulefill\\
+}
+\pagebreak
+\section{\textnormal{Introduction}}
+\label{chap:section_one}
+    In this chapter we present the various concepts developed for the project, in both manners : general and detailed.
+\section{\textnormal{Preliminary Design}}
+\label{chap:section_one}
+  In this part we approach the definition of the technical architecture which consists in making the
+  choice of technologies and organization of software components best suited to the needs and
+  constraints of the host organization. These choices are then relayed within our project,
+  guiding the design and allowing the transformation of a functional model into an efficient and robust application.  
+  \subsection{Logical Architecture}
+  In this section we will describe the logical architecture of the project, and how its conceptualized systems interact and behave theorically.
+  \paragraph{\ac{ECS}}
+  Since the project's nature is unconventional by nature, having it resembles a game more than a classical software, we opted to use a Model refined for such purposes
+  thus why we chose ECS, i.e : Entity Components System, ECS's architecure follows the principles of Composition over Inheritance, it softly rejects the OOP in favour of a more adapted and generic System,
+  in ECS entities are not defined as being part of a complex hierarchy, but instead they are defined as being part of a sub-system, these components and sub-systems form a global system that acts globally over all entities given they fullfil the contracted interface (i.e : they have the required components),
+  the basic parts of ECS are Components, Systems and Entities :
+  \begin{itemize}
+    \item Entity    : this is typically a general purpose Object, i.e : data plus behaviour;
+    \item Component : this is an entity that possesses a particular aspect, and holds data needed to model that aspect;
+    \item System    : A system is a process which acts on all entities with the desired components;
+  \end{itemize}   
+  In an analogy we can loosely compare ECS to Interfaces in OOP and functions, as in a function who's type signature takes an interface, requires the objects it operates on to fullfil the contract implied by said interface, so in this analogy a system is model by the function while the entity is object parameter and the entity is 
+  the interface implementation, while interfaces can't have default implimentations, Components do have bodies.
+  \begin{figure}[H]%
+    \center%
+    \includegraphics[height=0.75\textwidth]{ECS9ArchitectureR2.jpeg}%
+    \caption[The basic parts of ECS]{a chart of the basic components of ECS}\label{fig:Image}%
+  \end{figure}
+  \subsection{Physical Architecture}
+  The architecture of our application has three main constituents, the client, the networking server and the signaling server, these parts co-operate to give the product its overall behaviours.
+  The system uses a mixture of P2P technologies, and centralized solutions to achieve its goal. hence the client itself serves as a server node for some functionalities.
+  \begin{itemize}
+    \item Client            : consists of the metaverse's virtual space, alongside the various interfaces developed to enrich and ensure a swift use of the software, it also serves as a communication Peer;
+    \item Networking Server : this is the server tasked by maintaining and controlling the shared state across multiple users;
+    \item Signaling Server  : this is the server that spins media-calls and media sharing within the spaces, it takes care of bootstrapping Peer to Peer connections;
+  \end{itemize}   
+  \begin{figure}[H]%
+    \center%
+    \includegraphics[height=0.45\textwidth]{physarch.png}%
+    \caption[the physical architecture]{the simplified Software architecture}\label{fig:Image}%
+  \end{figure}
+\section{\textnormal{Detailed Design}}
+The project process is a interaction between various internal and external entities, but the flow of action is as generally as follows : 
+\begin{figure}[H]%
+  \center%
+  \includegraphics[height=1.25\textwidth]{ActionsDiag.png}%
+  \caption[Diagram of the General Flow of actions]{the general flow of actions in the program}\label{fig:Image}%
+\end{figure}
+to give more context to the diagram above, we will delve into a more detailed Conception in the next paragraph.\\
+But first let's paint the global image, the system's core processes and concepts are :
+\begin{itemize}
+  \item Accommodation of users;
+  \item Giving ability to create / expand spaces;
+  \item Giving access to shared spaces;
+  \item Ensuring having a shared cross users Experience;
+\end{itemize}  
+Starting by "Accommodation of User", this process relies on the User either registering or Logging in the system, 
+the user can be verified either by OAuth, Classical Login System, or by blockchain/web3 \ac{ID} tokens, a user is allowed to log in 
+if and only if they have a space or they are trying to log into a public space, or they have been invited into a private place (an invite is can be in the form of an \ac{NFT}). \\
+Then there is "Giving access to shared spaces" which is the process of allowing Users to see and explore available spaces with each other (given they are allowed in those spaces),
+those spaces are then part of the Metaverse.\\
+Next comes "Giving ability to create / expand / extinguish spaces" which is summarizes the process of allowing people to create their own spaces as they see fit, decorate them and expand 
+on them to build communities, these functionalities are what allows this Metaverse to be "Dynamic".\\
+and Finally "Ensuring having a shared cross users Experience" which is the requirement of having one shared state and one shared experience across users no matter what, this describes
+the set of functionalities and systems that allows for multi-users interactions, communication inside spaces, and it is what makes the Metaverse "Alive".
+\subsection{Client architecture} 
+The client is the public interface that is accessed by the visitors, it has multiple subsystems layered on top of each other to achieve various taskes, 
+first we have the Unity webgl build, that takes care of rendering the 3D spaces, then we have the communication system, the P2P video/voice/text chat mechanism used by the system,
+and lastly there is the interop layer, that consists of a set of type definitions and function implementations that allow both subsystems to pass data back and forth.
+\begin{figure}[H]%
+  \center%
+  \includegraphics[height=0.3\textwidth]{clientISdeArch.png}%
+  \caption[Client Side architecture]{The client side simplified architecture}\label{fig:Image}%
+\end{figure}
+\paragraph{The Virtual Space} 
+This is the Engine that takes care of the 3D rendering, in the true fashion of ECS, the system model is comprised of many subsystems each taking care of an aspect of the program.\\
+The subsystems can be categorized in two categories, worker subsystems, and actor subsystems.
+\begin{itemize}
+  \item Worker Systems : Worker systems are those that take care of background functionalities, they start as soon as the session starts, and they function independently of user Input, their functionalities vary from bootstrapping other subsystems, to delivering message between them;
+  \item Actor  Systems : Actor systems are the subsystem that awaits user input in order to perform specific action depending on that action, they vary from the chat subsystem to the file Importer system;
+\end{itemize}
+the map of these systems is intertwined since they depend on each other, and together they form the Virtual Space system. \\
+\begin{sidewaysfigure}
+  \begin{figure}[H]%
+    \center%
+    \includegraphics[width=1\textwidth]{SysDiagOverview.png}%
+    \caption[Map of systems layout]{this is an extremely simplified view of the system}\label{fig:Image}%
+  \end{figure}
+\end{sidewaysfigure}
+\pagebreak
+\\
+the figure above shows the various system working in conjunction to each other, in details they function like the following.
+\begin{figure}[H]%
+  \center%
+  \includegraphics[height=0.5\textwidth]{SystemInteraction.png}%
+  \caption[Inter system interactions model]{this is an overview of inter-system interaction}\label{fig:Image}%
+\end{figure}
+Actors Systems' entry point is user interactions, those systems will try to handle those events internally if possible, either via invoking the event handler, or by acquiring a static singleton ref of another system,
+if neither exist then that means the other system is either remote, external or a standalone entity, all of those are accessible via the mediation manager, the invoking system then bundles a message that include metadata about 
+the action required, input arguments to pass to the handling system and Transfer Pipe, and passes that message to the Mediation Manager then the latter transfers the message to the desired system.
+As an example of these interactions we will look at how the system as a whole handles the action of players moving from zone to zone (The figure ignores the case of Stage::Zones, or Store::Zones for the sake of simplicity).
+\begin{figure}[H]%
+  \center%
+  \includegraphics[height=0.75\textwidth]{UserZoned.png}%
+  \caption[User joined zone event lifecycle]{User joined zone event handling process (dotted lines express remote processes)}\label{fig:Image}%
+\end{figure}
+The figure shows the different interactions between the systems to initiate an \ac{RTC} call, another example would be the File Import system, which works as follows :\\
+The user uses the file explorer to select a file, then the file import system uploads the byte array of that file to the cloud, and awaits for a response wrapping a URL, 
+then it broadcasts that URL to all users in that space, and using the Metadata bundled in the broadcasted message, the system creates the necessary objects to manifest the media file in 3D.
+The following figure shows the process as it happens (it ignores the presentation type of files for the sake of simplicity):
+\begin{figure}[H]%
+  \center%
+  \includegraphics[height=0.75\textwidth]{FileImport.png}%
+  \caption[File Import Process Overview]{File import sequence diagram (dotted lines express remote processes)}\label{fig:Image}%
+\end{figure}
+\paragraph{The Communication Layer} 
+The communication layer relies on the \ac{WebRTC} technology, it is developed as part of the host  environment instead of being part of the inner managers' ecosystem.
+\subparagraph*{Web real time communication}
+\ac{WebRTC} is a public and open source \ac{API} and set of Protocols that aims to provide functionalities facilitating creating rich media based communication, it is published by the \ac{W3C} and \ac{IETF}, and supported by all major 
+browser vendors such as : Microsoft, Apple, Mozilla and Google.\\  
+One of the main aspects of \ac{WebRTC} is that it only creates direct connections between 2 client devices, which poses some problems regarding scalability.\\
+Spinning a peer to peer connection requires the existence of an external factor that would help broadcast the credentials of the callers to the callee and vice versa, this entity would be the signaling system.\\
+The system works as follows : 
+\begin{figure}[H]%
+  \center%
+  \includegraphics[height=0.65\textwidth]{WebRTCTriangle.png}%
+  \caption[WebRTC call initiation overview]{The overview of a WebRTC call initiation}\label{fig:Image}%
+\end{figure}  
+This \ac{P2P} architecture poses difficulties in maintaining it, but provides a great flexibility when dealing with it \cite[p.~9]{1}.
+\begin{figure}[H]%
+  \center%
+  \includegraphics[height=0.35\textwidth]{P2P.png}%
+  \caption[Peer to peer connections graph]{the P2P connections form a complete graph}\label{fig:Image}%
+\end{figure}
+\subparagraph{Communication Layer implementation}
+The communication layer is the subsystem that takes care of starting, maintaining and ending \ac{WebRTC} calls, it does so by initiating what we call a "Handshake", the Handshake is a process of a sequence of messages that goes back and forth between
+the Peers, and these messages include some metadata about the host devices that would be crucial for the \ac{RTC} call to start.
+The Protocol has been designed to be transfer agnostic, i.e it does not specify any technology for the broadcast of these messages, but certainly one cannot start an RTC call without the process of signaling.
+\begin{figure}[H]%
+  \center%
+  \includegraphics[height=0.65\textwidth]{WebrtcProc.png}%
+  \caption[Sequence diagram of The process of initiating an RTC call]{The process of initiating an RTC call}\label{fig:Image}%
+\end{figure}  
+The Pipe can be any Protocol of data transfer, even manual messaging works, but in our case we are using a service dedicated to this task in our server, this makes it expansive to spin a connection from scratch 
+every time which is why our implementation adds some heavy memoization mechanism to cache and retrieve connection peers when ever possible.  
+\subsection{Server Architecture}
+Depending on the requirement of the project we concluded that it needs 3 Types of server services, each for a set of tasks.
+\begin{itemize}
+  \item Authentication Server  : This Service will take care of Authentication, whether by invoking local servers or by invoking the blockchain;
+  \item Signaling Server       : This Service will take care of sending short quick messages, that aren't time critical, i.e : bootstrap  a video call, send a text message;
+  \item Networking Server      : This Service will take care of synchronizing the scene state across users, it is a real-time time service hence it is time critical;
+  \item Storage Server         : This Service will serve as the storage entry point for the project;
+\end{itemize}
+any other functionality needed can be built on top of these 4 services.
+\begin{figure}[H]%
+  \center%
+  \includegraphics[width=1\textwidth]{ServerArch.png}%
+  \caption[An Overview Diagram of the server architecture]{An Overview of the server architecture}\label{fig:Image}%
+\end{figure}  
+The figure shows two types (2 types) of Services, \ac{RPC} services and \ac{HTTP} services, we differentiate between them by how often they spin into action,
+Networking and signaling services work very often inside the space, so they rely on websockets to have an always on connection, while Storage and \ac{Auth} services rarely get invoked hence why they are based on Http.
+\paragraph{Http Services}
+Http services are comprised of both storage and Authentication services, these two services are characterized by the fact that they run rarely in a session.
+\subparagraph{Storage Service}
+The Storage service start acting only when users are requesting or sharing documents, it's use fairly limited, it is basically a \ac{CRUD} service for serialized Media files.
+\begin{figure}[H]%
+  \center%
+  \includegraphics[width=1\textwidth]{filesDBseq.png}%
+  \caption[Sequence diagram of File Service]{An Overview of the process of file storage}\label{fig:Image}%
+\end{figure} 
+\subparagraph{Authentication Service}
+The authentication as the name suggests is the service taking care of user authentication, it is a typical register/login service with extra feature inherited from the web3 nature of the project,
+in addition to using email and password, the service also uses a decentralized identity system, this latter relies on user wallets and smart contracts to store and retrieve user data.
+mostly those contracts are in the form of NFT tokens, these latter serve like passport stamps, and are used to identify the user.
+\begin{figure}[H]%
+  \center%
+  \includegraphics[width=0.85\textwidth]{authService.png}%
+  \caption[Sequence diagram of Authentication Service]{An Overview of the process of authentication}\label{fig:Image}%
+\end{figure}
+\paragraph{RPC Services}
+Rpc services are characterized by the fact that they are always spinning in a session, they are used to communicate with the server and with the blockchain, they rely on web sockets under the hood,
+and they use named functions tagged as RPCs to dispatch the requests.
+\subparagraph{Signaling Service}
+Although signaling is a task that doesn't require an always on connections, it is a task that is often used in the system, that is why it is an RPC service, spinning an HTTP connection for each and every
+message that is sent is expansive.\\
+One use case of this service as said before is bootstrapping a WebRTC Connection, another one would be synchronizing animation across network, that process is illustrated in the following diagram : \\
+\begin{figure}[H]%
+  \center%
+  \includegraphics[width=0.85\textwidth]{signalingAnimations.png}%
+  \caption[Sequence diagram of Signaling Service]{An Overview of the process of signaling}\label{fig:Image}%
+\end{figure}
+\subparagraph{Networking Service}
+Networking service is the mechanism by which our system ensures that the scene is always in sync, it's used to synchronize state and actions across network, but its main concern is to allow users to explore collectively the spaces
+they join, and to allow users to interact with each other, and since the state of the scene changes every frame, this service needs to be efficient, fast and allow for real-time updates of the state on the fly.
+One use case of this service as stated before is synchronizing positions of users inside of a space, the flow of the process goes as follow :\\
+\begin{figure}[H]%
+  \center%
+  \includegraphics[width=0.85\textwidth]{networkingTransform.png}%
+  \caption[Sequence diagram of Networking Service]{An Overview of the process of transform synchronization}\label{fig:Image}%
+\end{figure} 
+\section{\textnormal{Bundling}}
+Bundling is the process of hooking these systems and libraries together in order for them to function, for the internal systems,
+the simple application of \ac{ECS} suffices, avatar entities get their own subsystems, i.e : The controls system and Avatars System, and then 
+the orchestrator object (the main manager of the scenes) gets the worker systems.\\
+Some problems arise from the fact of how non trivial webgl builds interact with the browser own architecture, since our program will be compiled in phases
+\begin{itemize}
+  \item 1st Phase : C\# to \ac{MSIL} or coomonly known as \ac{IL}, this phase it the typical step in VM based runtime compilations;
+  \item 2nd Phase : \ac{IL} to CPP (C++), this is a phase introduced by the Unity engine to compile IL code to low level C++ code that is ready to be compiled for browser envirements;
+  \item 3rd Phase : C++ to \ac{WASM}, this phase is crucial for the build to run on the browsers, it uses WASM as a compilation target using emscripten as a c++ compiler;
+\end{itemize} 
+Now due to the fact that Wasm is a new web standard access to many of the browsers APIs is limited or in some cases non-existant, which proved to be problematic when trying to do voice based communications,
+audio streaming is not supported yet by unity because of the mentioned limitations of WASM, the solution was to do it entirely in a host website and use Unity / Js interop to handle the processes, which added a new 
+layer of indirection but gave us control over the communication layer the lowest level possible.\\ 
+So in actuality the webRTC call bootstrapping happens as follows : 
+\begin{sidewaysfigure}
+  \begin{figure}[H]%
+    \center%
+    \includegraphics[width=1\textwidth]{rtccallinteroplayer.png}%
+    \caption[Sequence diagram of RTC call bootstrapping]{An in depth look at RTC call bootstrapping}\label{fig:Image}%
+    \label{fig:webrtccall}
+  \end{figure} 
+\end{sidewaysfigure}
+The figure \ref{fig:webrtccall} shows that in order to start an RTC call the interop layer is used to remedy the fact that we cant handle the calls from 
+within the build itself.\\
+Secondly when it comes to file sharing, some problems arise due to what have been state before, WASM limitations, but this time the interop layer too suffers from a limitation
+Unity by itself doesn't have a file picker for WebGL builds, so interop with JS was necessary to use the browser's native file picker, until now it's all sound and clear, but by the nature
+of how Javascript interacts with WASM the file buffers that can be sent back and forth are limited in size, and Media files which we desire to import are of sizes exceeding that limit (the limit is around 1.6mb),
+the solution was to use an intermediate file storage and pass only addresses around and fetch them when needed, of course doing this will be problematic for the server since it will be handling 
+a very big amount of file transfers each session, the Concept mechanism of the file transfer then was adapted to incorporate the \ac{IPFS} as a storage facility \Cite[p.~9]{6}, and use its protocols to fetch those 
+documents (See figure \ref{fig:fileimport}).
+\begin{sidewaysfigure}
+  \begin{figure}[H]%
+    \center%
+    \includegraphics[width=1\textwidth]{ActualFileImport.png}%
+    \caption[Sequence diagram of File import]{An in depth look at File import process}\label{fig:Image}%
+    \label{fig:fileimport}
+  \end{figure} 
+\end{sidewaysfigure}
+\section{\textnormal{Conclusion}}
+To conclude, during the implementation of the project, we have added many features,
+and functionalities, solved problems as we go, as we've seen the project is an interconnected web
+of services and systems, interoperating, but done in a way standalone system adheres to the spec defined,
+the main goal of this phase was to develop the Proof Of Concept and prove it is doable, and later refactoring
+and industrializing may be added to the project. 
+
+   
+\label{chap:section_one}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

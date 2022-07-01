@@ -1,0 +1,221 @@
+\chapter{Programming}%
+\label{chap:chapter_four}
+\vspace{25pt} {
+  \hrulefill \\%
+  This chapter will delve into the implementation process and tools used to achieve that, as well as the results of the implementation, and 
+  the various tests that were performed.\\
+  First we will see the tooling utilized to implement the software, which among those we cite : unity the game engine, photon the networking 
+  engine, and .Net as the backend technology ... etc, those are some of the technologies used in the internship.\\
+  In the next part we will showcase the results of the implementation, both the front-end and the backend, and explain 
+  some example functionalities.\\
+  and lastly we will show and explain various tests done to verify the soundness and correctness of the software.  
+  \hrulefill\\
+}
+\pagebreak
+
+\section{\textnormal{Introduction}}
+\label{chap:section_one}
+    Every software life-cycle passes from the implementation phase, and this phase
+    is one of the most important phases of the project's life, to do it, the Development team 
+    uses various technologies, and tools to bring the project to life, this chapter will go through
+    some of these tools.  
+\section{\textnormal{Development environment}}
+\label{chap:section_one}
+  In this Section we will explore the various tools and technologies used during the implementation of the project, 
+  we can separate them into different categories, tooling, organization, technologies.
+  \begin{itemize}
+    \item Tooling : the various tools such us IDEs, text editors and other software that were used to directly implement the project;
+    \item Organization : the tools that were used to coordinate and organize the team's tasks and work;
+    \item Technologies : the various SDKs and APIs ... etc that were used to implement certain features in the project;
+  \end{itemize}
+  \subsection{Tooling}
+  Tooling software as stated above is the collection of application used to host the implementation process of the project.
+  \pagebreak
+  \begin{itemize}
+    \item \ac{VS} Code : a versatile code editor developed by \ac{MSFT}, extended by the C\# extensions and intellisence it provides a powerful coding and debugging context; \\
+                        \begin{figure}[H]%
+                          \center%
+                          \includegraphics[width=0.85\textwidth]{VscodeScreenshot.jpg}%
+                          \caption[Screenshot of VS Code]{Screenshot of Visual studio code}\label{fig:Image}%
+                        \end{figure}
+    \item Unity : a game engine used for rendering 3D visuals, it provides a light weight runtime to build games and 3D software on top of, it uses C\# as scripting Language,\\
+                  one of the main aspects of this engine is its ability to target multiple build targets mainly : webgl, windows, android, macos, ios ...  \cite[p.~9]{2}.
+                  \begin{figure}[H]%
+                    \center%
+                    \includegraphics[width=0.85\textwidth]{UnityScreenshot.jpg}%
+                    \caption[Screenshot of Unity]{Screenshot of Unity Editor}\label{fig:Image}%
+                  \end{figure}
+    \item Edge  : a browser developed on top of chromium used to debug \ac{WASM} and WebGL builds. 
+                  \begin{figure}[H]%
+                    \center%
+                    \includegraphics[width=0.75\textwidth]{EdgeScreenshot.jpg}%
+                    \caption[Screenshot of Microsoft Edge]{Screenshot of Microsoft Edge}\label{fig:Image}%
+                  \end{figure}
+  \end{itemize}
+  \subsection{Organization}
+  For organization we used some unconventional for team coordination and some conventional software to coordinate the implementation process.
+  From these we mention : 
+  \begin{itemize}
+    \item Slack  :Slack is a messaging program designed specifically for the workplace. it offers persistent chat rooms organized by topic, private groups, and direct messaging, we use it to talk and communicate with the team;\\
+          \begin{figure}[H]%
+            \center%
+            \includegraphics[width=0.75\textwidth]{SlackImage.jpeg}%
+            \caption[Screenshot of Slack App]{Screenshot of Slack App}\label{fig:Image}%
+          \end{figure}
+    \item Notion :Notion is a project management and note-taking software. Notion is software designed to help members of a company or organization coordinate deadlines, objectives, and assignments for the sake of efficiency and productivity, and we use it in the company to share memos, file, and other documents, as well as manage tasks;\\
+          \begin{figure}[H]%
+            \center%
+            \includegraphics[width=0.75\textwidth]{NotionImage.png}%
+            \caption[Screenshot of Notion App]{Screenshot of Notion App}\label{fig:Image}%
+          \end{figure}
+    \item Github : GitHub, Inc. is a provider of Internet hosting for software development and version control using Git. It offers the distributed version control and source code management functionality of Git, and we use it to coordinate coding, and deploy Tests as CI/CD process;\\
+          \begin{figure}[H]%
+            \center%
+            \includegraphics[width=0.75\textwidth]{GithubImage.jpeg}%
+            \caption[Screenshot of Github website]{Screenshot of Github website}\label{fig:Image}%
+          \end{figure}
+  \end{itemize} 
+  \subsection{Technologies}
+  When it comes to technologies our team used various technologies to achieve its goal, these tools can be divided into different categories, such as : programming languages, \ac{SDK}, \ac{API} and Frameworks.
+  \begin{itemize}
+    \item Programming Languages : we used C\# and Typescript as main programming languages, and solidity as a smart contract language.
+          \begin{itemize}
+            \item C\# for its robustness, since it was imposed by the Unity engine there wasn't much of a choice there, many aspects that made C\# was it having a good type system, a very fast runtime and overall a good ecosystem;
+            \item Typescript, we used it as an alternative to Javascript, since we wanted to benefit from Typescript's compiler to catch as much preventable bugs as possible, and syntax wise it is similar to C\# which makes the switch seamless and not a big deal, we used it to implement the host website as well as the interop layer;
+            \item Solidity, its use cases were niche, as it is not a general purpose programming language as the others it was only used rarely to develop some custom smart contracts for the blockchain interaction;
+          \end{itemize}        
+    \item \ac{SDK} : we used Unity's Photon as a networking engine, and Unity's Moralis SDK as a blockchain interop SDK.
+          \begin{itemize}
+            \item Photon : This is a networking solution built on top of unity, it provides many basic functionalities to bootstrap multi-player game development \cite[p.~9]{4};
+            \item \ac{RPM}: This is a toolbox that allows for dynamic generation of avatar at pre-runtime to be used inside 3D spaces \cite[p.~9]{5};
+            \item Moralis: This is an SDK that allows for interacting with wallets and the blockchain, it provides ease of use and simplicity and a good integration with Unity\cite[p.~9]{7};
+          \end{itemize}    
+    \pagebreak
+    \item Frameworks : 
+          \begin{itemize}
+            \item \ac{IPFS} : The InterPlanetary File System is a protocol and peer-to-peer network for storing and sharing data in a distributed file system. IPFS uses content-addressing to uniquely identify each file in a global namespace connecting all computing devices, and we use it to share documents when possible, or save state for presistense;
+            \item .Net : For the backend we used .Net (Dotnet 6), as it provides a very rich ecosystem, and it uses C\# as well, allowing us to share most type definition, and have one coherent homogeneous codebase or at least to some degree \cite[p.~9]{3};
+          \end{itemize}
+  \end{itemize}
+  \section{\textnormal{Application}}
+  The application is for the main part a website that hosts a webgl build, other build targets exist such as android and windows but they aren't prioritized at the moment, the process goes as follows : \\
+  The user visits the applications's website : 
+  \subsection{Avatar Selection}
+  \begin{figure}[H]%
+    \center%
+    \includegraphics[width=0.85\textwidth]{FirstScreenApp.jpg}%
+    \caption[Avatar type Menu in the Netherverse]{First Menu in the website}\label{fig:Image}%
+  \end{figure}
+  the image above shows the first menu in the Avatar Selection process, VR avatars mostly use bodyless Mannequins, but we also full body rigged avatar mannequins, actually they are the main mode of use in the Netherverse.\\
+  Next we can either login to the \ac{RPM} service to fetch our avatars if we have already made some, or we can choose a gender to proceed to create a custom one on the fly.
+  \begin{figure}[H]%
+    \center%
+    \includegraphics[width=0.85\textwidth]{SecondScreenApp.jpg}%
+    \caption[Gender Selection Menu in the Netherverse]{Gender Selection in the website}\label{fig:Image}%
+  \end{figure}
+  after selecting the Avatar type, we then either take a photo or select a photo from the gallery, so the application can approximate an avatar dynamically on the fly, or we can pick an premade avatar from the list as shown bellow\\
+  \begin{figure}[H]%
+    \center%
+    \includegraphics[width=0.85\textwidth]{ThirdScreenApp.jpg}%
+    \caption[Avatar Selection menu in the Netherverse]{Avatar Selection Menu in the website}\label{fig:Image}%
+  \end{figure}
+  when we pick our avatar, then we get to customize certain aspect of it's appearance, such as the color, the skin, the clothes, the hair style ... etc, the image bellow shows the 
+  UI of the customization process.\\
+  \begin{figure}[H]%
+    \center%
+    \includegraphics[width=0.85\textwidth]{FourthScreenApp.jpg}%
+    \caption[Avatar customization menu in the Netherverse]{Avatar customization in the website}\label{fig:Image}%
+  \end{figure}
+  the changes can be done using the toolbox in the bottom and the avatar will update dynamically to show the changes.
+  \begin{figure}[H]%
+    \center%
+    \includegraphics[width=0.85\textwidth]{FifthScreenApp.jpg}%
+    \caption[Avatar customization menu in the Netherverse]{Avatar customization after changing some aspect of the avatar}\label{fig:Image}%
+  \end{figure}
+  \subsection{Spaces Selection}
+  After finishing the Avatar selection and customization, we close the \ac{RPM} menu and we can start the Netherverse, 
+  but before we can join, we need to fill out a few details, such as the name, the space we want to join ... etc.
+  the next UI depends on some external factors such as whether the user has a web3 wallet extension in the browser, 
+  if they don't they will see the classical login page :
+  \begin{figure}[H]%
+    \center%
+    \includegraphics[width=0.85\textwidth]{sixthScreenApp.jpg}%
+    \caption[Login page in the Netherverse]{Login page in the website using normal Login}\label{fig:Image}%
+  \end{figure}
+  and if they actually do have a wallet they will be shown this UI instead : 
+  \begin{figure}[H]%
+    \center%
+    \includegraphics[width=0.85\textwidth]{sixthAndHalfScreenApp.jpg}%
+    \caption[Login page in the Netherverse]{Login page in the website using web3 Login}\label{fig:Image}%
+  \end{figure}
+  after filling those forms, we can join the Netherverse, and we can start exploring the spaces.
+  \begin{figure}[H]%
+    \center%
+    \includegraphics[width=0.85\textwidth]{EighthScreenApp.jpg}%
+    \caption[Netherverse Loading screen]{Netherverse Loading screen, it shows the controls, while downloading the Avatar Model}\label{fig:Image}%
+  \end{figure}
+  \subsection{Spaces Exploration}
+  Once loading is finished we can start moving around and interacting with the world, the image bellow shows the UI of the Netherverse.
+  \begin{figure}[H]%
+    \center%
+    \includegraphics[width=0.85\textwidth]{NinthScreenApp.jpg}%
+    \caption[Netherverse UI]{Netherverse UI}\label{fig:Image}%
+  \end{figure}
+  we can do various things inside the Netherverse such as import custom objects, and chat and talk with other people.
+  \begin{figure}[H]%
+    \center%
+    \includegraphics[width=0.85\textwidth]{TwelvethScreenApp.jpg}%
+    \caption[Importing custom objects in the 3D Space]{Importing a Budhist priest Model in the space}\label{fig:Image}%
+  \end{figure}
+  the image above shows the user importing a Status Model inside the space using the import Menu, other objects can be imported as well such as : Videos, Images, Text, and Audio.
+  \begin{figure}[H]%
+    \center%
+    \includegraphics[width=0.85\textwidth]{EleventhScreenApp.jpg}%
+    \caption[Chatting in the 3D space]{using the chat UI to send a local message}\label{fig:Image}%
+  \end{figure}
+  \pagebreak
+  \subsection{Netherverse in Action}
+  And lastly when other users join the same space as us, we can see their avatars and chat with them.
+  \begin{figure}[H]%
+    \center%
+    \includegraphics[width=0.85\textwidth]{AllHandsImage1.png}%
+    \caption[Netherverse in action with 40+ Users]{chatting inside local zones with other people}\label{fig:Image}%
+  \end{figure}
+  \begin{figure}[H]%
+    \center%
+    \includegraphics[width=0.85\textwidth]{AllHandsImage2.png}%
+    \caption[Netherverse in action with 40+ Users]{exploring the space with other users}\label{fig:Image}%
+  \end{figure}
+  The images above show a view of the Netherverse during one of its global testing moments, when a milestone was achieved, having more than 40+ people inside concurrently, talking and exploring the space.\\
+  The other side of the project is Arts, the Netherverse spaces are customizable to fit the needs of the host, as an example if the host want an art gallery they can make it inside of the netherverse.
+  \begin{figure}[H]%
+    \center%
+    \includegraphics[width=0.85\textwidth]{ExhibitImage.jpg}%
+    \caption[Netherverse Art Gallery]{Netherverse Art Gallery}\label{fig:Image}%
+  \end{figure}
+  The image above shows a Netherverse art gallery with a few models inside and some Images, and the user can interact with them as well as other users in that space.
+  \section{\textnormal{Tests}}
+  When it comes to the test we did one global test, at the AllHands event (an internal event), it was designed to stress test, the system to see how much it can handle 
+  the stress test result were :
+  \begin{itemize}
+    \item Client Side limits : the test proved that the hardware of the client poses a limitation on the software itself, which put in a situation where we needed to chose what target Specifications we are going to target, or are we going to impose limits on certain aspects to keep the project resource friendly; 
+    \item Server Side limits : the test also proved that the server architecture has limits when it comes to broadcasting, not technical limits but financial ones, as every message costs money, and we can calculate the price of each session by the following equation : nbrOfCCUs * msgPrice, (nbrOfCCUs : Number of Concurernt Users, msgPrice : Message Price), message price varies according to it's byte size, so to remedy this, we moved away from json serialization toward binary serialization, and introduced a hard cap for message counts per room;
+    \item Communication Side limits : Due to the nature by which we handled communication, sounds is flat and bound to zones, which proved to be annoying and noisy, to solve that we emulated 3D sound in the browser context and now sound is bound to zones and a special distance field function; 
+  \end{itemize}    
+  The following is a chart depicting the result of the test where performance stands for the average between the reported clients \ac{FPS}:
+  \begin{figure}[H]%
+    \center%
+    \includegraphics[width=0.85\textwidth]{benchmark.jpeg}%
+    \caption[Netherverse Stress test]{the result of the benchmark}\label{fig:Image}%
+  \end{figure}
+  The figure shows that performance starts degrading rapidly around 50 CCUs, mainly because of the client's hardware specs, so for now we added the ability to create dynamic room based on CCU count, and capped the size limit at 25, while migrating the networking layer to a new architecture that used space culling and a hybrid P2P/Server network pipes.  
+  \label{chap:section_one}
+\section{\textnormal{Conclusion}}
+In conclusion, this was a showcase of the project, we've seen avatar selection menu, login phase, and the 3D space showcase,
+the UI is a work in progress, but made simple to adhere with WEB3 style, and in the "Netherverse in Action" we saw the 3D space having 
+many users interacting with each other.
+we couldn't showcase the rest of the project as it is all implicit systems working in the background, but having the build hosting at least 40 people
+is a proof of them functioning. 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

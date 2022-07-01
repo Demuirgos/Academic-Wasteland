@@ -1,0 +1,12 @@
+@startuml
+Peer1 -> Peer1 : Create Message request
+Peer1 -> Pipe  : Send Request Message
+Pipe  -> Peer2 : Receive Request Message
+Peer2 -> Peer2 : Get Peer1 Credentials 
+Peer2 -> Peer2 : Create Answer Message
+Peer2 -> Pipe  : Send Answer Message
+Pipe  -> Peer1 : Receive Peer1 Credentials 
+Peer1 -> Peer1 : Get Peer2 Credentials 
+Peer1 <-> Peer2: Exchange Data
+
+@enduml

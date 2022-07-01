@@ -1,0 +1,7 @@
+@startuml
+Gadget <|-- Phone
+Gadget <|-- Tablet
+Gadget <|-- Computer
+Tablet *-- TactilePC  
+Computer *-- TactilePC 
+@enduml

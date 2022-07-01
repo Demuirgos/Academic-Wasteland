@@ -1,0 +1,33 @@
+@startuml
+User -> "Interface System"                     : Open File Dialogue
+"Interface System" -> User                     : Media Type Selection Menu
+User -> "Interface System"                     : Select Media Type
+"Interface System" -> "Interop Layer"          : Open File picker
+"Interop Layer" ->  "File Picker"              : Open File picker
+User -> "File Picker"                          : Select file 
+"File Picker" -> "File System (external)"      : Process Selected File
+"File System (external)" -> "IPFS"             : Store file
+"IPFS" -> "File System (external)"             : Send Hash address
+"File System (external)" -> "Interop Layer"    : Send Hash address
+"Interop Layer" -> "File System (internal)"    : Handle File Address 
+"File System (internal)" -> "Mediation System" : Broadcast URI
+"Mediation System" --> "Mediation System"      : Invoke RPC 
+group "Parrallel Actions"
+    == Action 1 ==
+    "Mediation System" --> "File System"           : Download File data
+    note right
+        this portion happens in remote machines
+    end note
+    "File System" --> "IPFS"                       : Download File data
+    "IPFS" --> "File System"                       : Receive File data
+    "File System" -> "File System"                 : Handle File data
+    == Action 2 ==
+    "Mediation System" -> "File System"            : Download File data
+    note right
+        this portion happens in local machine
+    end note
+    "File System" --> "IPFS"                       : Download File data
+    "IPFS" --> "File System"                       : Receive File data
+    "File System" -> "File System"                 : Handle File data
+end
+@enduml

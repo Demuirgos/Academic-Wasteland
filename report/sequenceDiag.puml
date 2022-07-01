@@ -1,0 +1,22 @@
+@startuml
+User -> System : Registers
+System --> User: Confirms Registration
+
+User -> System : Authenticate
+
+alt successful case
+    System -> User: Authentication Accepted
+    alt User is a User 
+        System -> System : Navigates to Spaces Menu
+        User-> System : Chooses a Space
+        System -> System : Loads Interactive Subsystems
+        System -> System : Navigate to the 3D Space View
+        User   -> System : Navigate to the 3D Space View
+    else User is a Host
+        System -> System: Navigates to Dashboard
+        
+else failure case
+
+   System -> User: Please repeat
+
+@enduml

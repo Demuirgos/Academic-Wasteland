@@ -1,0 +1,51 @@
+@startuml
+start
+:user arrival;
+if (user registered) then (yes)
+    :navigate to menu;
+else (no)
+    repeat 
+        :prompt registration; 
+    repeat while (user registered) is (no)
+endif
+repeat
+   fork 
+      :user logs in;
+      switch (user) 
+      case (visitor)
+         if (first visit?) then (yes)
+            :show avatar menu;
+            :user creates avatar;
+         else (no)
+            :prompt avatar selection;
+         endif
+         while (user connected?)
+            :user joins space;
+            :create 3d space & setup system;
+            :get user input;
+            :synchronize state;
+         endwhile
+      case (host)
+         :show dashboard;
+         fork 
+           switch (action)
+           case (create space)
+              :create empty space;
+           case (manage spaces)
+              :show spaces;
+              :select space;
+           endswitch
+           while (manipulation mode?)
+             :user input;
+             :manipulate space;
+           endwhile
+         fork again
+           :delete spaces;
+         endfork
+       endswitch
+   fork again
+       :user exits;
+       stop
+   endfork
+repeat while (user logged?) is (yes)
+@enduml

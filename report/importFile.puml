@@ -1,0 +1,28 @@
+@startuml
+User -> "Interface System"                : Open File Dialogue
+"Interface System" -> User                : Media Type Selection Menu
+User -> "Interface System"                : Select Media Type
+"Interface System" -> User                : File Selection Explorer
+User -> "Interface System"                : Select file 
+"Interface System" -> "File System"       : Process Selected File
+group "Parrallel Actions"
+    == Action 1 ==
+    "File System" -> "Http System"            : Upload Selected File
+    "Http System" -> "Data Server"            : Send serialized Data
+    "Data Server" -> "Http System"            : Send file URL and Id
+    "Http System" -> "Mediation System"       : Broadcast URL
+    "Mediation System" --> "Mediation System" : Invoke RPC 
+    "Mediation System" --> "File System"      : Download File data
+    alt File : Video | Audio | Image | Object
+        "File System" --> "File System"        : Instantiate Media Object
+    else File : Text
+        "File System" --> "Chat System"        : Broadcast Text Message
+    end
+    == Action 2 ==
+    alt File : Video | Audio | Image | Object
+        "File System" -> "File System"        : Instantiate Media Object
+    else File : Text
+        "File System" -> "Chat System"        : Broadcast Text Message
+    end
+end
+@enduml

@@ -1,0 +1,21 @@
+@startuml
+User    -> "Controls System"            : Move avatar 
+"Controls System" -> "Avatar System"    : Move avatar object
+"Avatar System" -> "Networking System"  : Broadcast Transform
+note right
+  broadcasting Transform is a process 
+  in which the rotation, position and scale
+  of the object are serialized, compressed
+  then sent over by an RPC with and obj_ID
+  to identify and update the transform of the 
+  remote object
+end note
+loop "for each connected user"
+"Networking System" --> "Avatar System": Move Avatar object
+note right
+  this is a remote action, 
+  it happens on the other 
+  connected machines
+end note
+end
+@enduml

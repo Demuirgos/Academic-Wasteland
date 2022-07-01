@@ -1,0 +1,14 @@
+@startuml
+== import file ==
+User -> Browser: Import file
+Browser -> Browser : Serialize content
+Browser --> "Storage Service": Send Http POST request
+"Storage Service" --> "Database/File system": store data
+== export file ==
+Browser --> "Storage Service": Send Http GET request
+"Storage Service" --> "Database/File system": query data
+"Database/File system" --> "Storage Service": get data
+"Storage Service" --> Browser: send data
+
+Browser -> Browser : Deserialize content
+@enduml

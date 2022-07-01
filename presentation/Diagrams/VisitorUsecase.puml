@@ -1,0 +1,15 @@
+@startuml
+skinparam packageStyle rectangle
+actor Visitor
+rectangle Netherverse {
+  Visitor -- (Register)
+  (Register) <-left- (Authenticate) : Include
+  (Authenticate) -left-> (Join Space) : Include
+  (Join Space) -left-> (Explore Space) : Extend
+  (Join Space) -up-> (Leave Space) : Extend
+  (Explore Space) -down-> (Interact with Space) : Extend 
+  (Interact with Space) -right-> (Interact with People) : Extend
+  (Interact with Space) -left-> (Interact with Objects) : Extend
+  (Authenticate) <-up- (Create Temporary Space) : Include 
+}
+@enduml

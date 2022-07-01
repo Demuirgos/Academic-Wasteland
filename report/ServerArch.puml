@@ -1,0 +1,16 @@
+@startuml
+skinparam BackgroundColor transparent
+skinparam componentStyle rectangle
+component Server {
+   component "RPC Services" {
+       [Networking]
+       port "Rpc Invokation"
+       [Signaling]  
+   }
+   component "Http Services" {
+      [Storage]
+      port "Http Endpoint"
+      [Authentication]
+   }
+}
+@enduml

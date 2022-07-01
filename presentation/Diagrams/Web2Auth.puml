@@ -1,0 +1,14 @@
+@startuml
+User -> Browser: Visits website
+Browser -> User : Prompt login
+User    --> Browser : Enter creadentials
+Browser --> Browser : Verify input
+Browser --> Server  : Send over http 
+Server  --> Server  : Authenticate credentials
+Server  --> Browser : Send response
+alt "User registered?"
+    Browser --> User    : Show Main Menu
+else 
+    Browser --> User    : Show Error
+end
+@enduml

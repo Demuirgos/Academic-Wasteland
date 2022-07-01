@@ -1,0 +1,18 @@
+@startuml
+User    -> AvatarSystem              : Play a "waving" animation
+AvatarSystem -> "Signaling Service"  : Invoke Play Animation RPC 
+"Signaling Service" -> AvatarSystem : Play "waving" Animation
+note right
+  this is a local action, 
+  it happens on the invoker's 
+  machine
+end note
+loop "for each connected user"
+"Signaling Service" --> AvatarSystem : Play "waving" Animation
+note right
+  this is a remote action, 
+  it happens on the other 
+  connected machines
+end note
+end
+@enduml

@@ -1,0 +1,13 @@
+@startuml
+User -> Browser: Visits website
+Browser -> User : Prompt login
+User    --> Browser : Scan QR-Code 
+Browser --> Browser : Extracts walletId
+Browser --> Blockchain : Query Tokens
+Blockchain --> Browser : Check Tokens
+alt "Registration Token Found?"
+    Browser --> User    : Show Main Menu
+else 
+    Browser --> User    : Show Error
+end
+@enduml

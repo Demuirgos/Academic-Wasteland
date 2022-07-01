@@ -1,0 +1,302 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=latex 2022.5.31)  21 JUN 2022 21:41
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**out/home-math-plain.tex
+(./out/home-math-plain.tex
+LaTeX2e <2017/01/01> patch level 3
+Babel <3.9r> and hyphenation patterns for 3 language(s) loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/bk10.clo
+File: bk10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) (out/madoko2.sty (/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
+\col@sep=\dimen103
+\extrarowheight=\dimen104
+\NC@list=\toks14
+\extratabsurround=\skip43
+\backup@length=\skip44
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: dvips.def on input line 147.
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/dvips.def
+File: dvips.def 2016/07/10 v3.1a Driver-dependent file (DPC,SPQR)
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
+))
+\everycr=\toks15
+\minrowclearance=\skip45
+) (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: dvips.def on input line 225.
+LaTeX Info: Redefining \color on input line 709.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+) (out/options.sty
+Package: options 2015/03/01, Daan Leijen, Provides convenient path-value (or key-value) options
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2017/01/02 v2.4 e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count88
+)
+\opt@nesting=\count89
+\opt@idx=\count90
+\opt@choiceord=\count91
+) (/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2013/04/04 v0.2 Provides if(tex) conditional for PDFTeX, XeTeX, and LuaTeX
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2016/10/09 v1.0u Standard LaTeX Graphics (DPC,SPQR)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: dvips.def on input line 99.
+)
+\Gin@req@height=\dimen105
+\Gin@req@width=\dimen106
+) (out/longfbox.sty
+Package: longfbox 2015/12/01, Daan Leijen, Provides long fbox that can break over pages
+(out/longbox.sty
+Package: longbox 2015/12/01, Daan Leijen, Provides basic longbox that can break over pages
+(/usr/share/texlive/texmf-dist/tex/latex/mdwtools/footnote.sty
+Package: footnote 1997/01/28 1.13 Save footnotes around boxes
+\fn@notes=\box26
+\fn@width=\dimen107
+)
+\lb@prevdepth=\skip46
+\lb@freevspace=\skip47
+\lb@headbox=\box27
+\lb@savebox=\box28
+\lb@mainbox=\box29
+\lb@usevbox=\count92
+\lb@width=\skip48
+\lb@height=\skip49
+\lb@skiptop=\skip50
+\lb@skipright=\skip51
+\lb@skipbottom=\skip52
+\lb@skipleft=\skip53
+\lb@skipbreaktop=\skip54
+\lb@skipbreakbottom=\skip55
+\lb@outerwidth=\skip56
+\lb@extrasplit=\skip57
+\lb@textalign=\count93
+\lb@baseline=\count94
+\lb@neededvspace=\skip58
+\lb@splitheight=\skip59
+\lb@insurance=\skip60
+\/longbox/@part-height=\skip61
+\/longbox/@part-width=\skip62
+\/longbox/@part-depth=\skip63
+\/longbox/@content-box-height=\skip64
+\/longbox/@content-box-width=\skip65
+\/longbox/@content-box-depth=\skip66
+\/longbox/@breakat-previous=\skip67
+\/longbox/@lower=\skip68
+\/longbox/split-minimum=\skip69
+\/longbox/split-badness=\skip70
+\/longbox/raise=\skip71
+\/longbox/height=\skip72
+\/longbox/width=\skip73
+\/longbox/outer-height=\skip74
+\/longbox/outer-width=\skip75
+\/longbox/skip-top=\skip76
+\/longbox/skip-right=\skip77
+\/longbox/skip-bottom=\skip78
+\/longbox/skip-left=\skip79
+\/longbox/skip-break-bottom=\skip80
+\/longbox/skip-break-top=\skip81
+) (/usr/share/texlive/texmf-dist/tex/latex/pict2e/pict2e.sty
+Package: pict2e 2016/02/05 v0.3b Improved picture commands (HjG,RN,JT)
+(/usr/share/texlive/texmf-dist/tex/latex/pict2e/pict2e.cfg
+File: pict2e.cfg 2016/02/05 v0.1u pict2e configuration for teTeX/TeXLive
+)
+Package pict2e Info: Driver file: dvips.def on input line 119.
+Package pict2e Info: Driver file for pict2e: p2e-dvips.def on input line 121.
+(/usr/share/texlive/texmf-dist/tex/latex/pict2e/p2e-dvips.def
+File: p2e-dvips.def 2016/02/05 v0.1u Driver-dependant file (RN,HjG,JT)
+)
+\pIIe@GRAPH=\toks17
+\@arclen=\dimen108
+\@arcrad=\dimen109
+\@tempdimd=\dimen110
+) (out/ellipse.sty
+Package: ellipse 2004/11/05 v1.0 .dtx ellipse file
+)
+\fbox@oct=\count95
+\fbox@quad=\count96
+\fbox@diaq=\count97
+\fbox@sign=\count98
+\fbox@anglestart=\skip82
+\fbox@angleend=\skip83
+\fbox@dash=\skip84
+\fbox@dashskip=\skip85
+\fbox@anglecur=\skip86
+\fbox@dashangle=\skip87
+\fbox@dashskipangle=\skip88
+\fbox@delta=\skip89
+\fbox@from=\skip90
+\fbox@to=\skip91
+\/fbox/padding-top=\skip92
+\/fbox/padding-right=\skip93
+\/fbox/padding-bottom=\skip94
+\/fbox/padding-left=\skip95
+\/fbox/padding-break-top=\skip96
+\/fbox/padding-break-bottom=\skip97
+\/fbox/margin-top=\skip98
+\/fbox/margin-right=\skip99
+\/fbox/margin-bottom=\skip100
+\/fbox/margin-left=\skip101
+\/fbox/margin-break-top=\skip102
+\/fbox/margin-break-bottom=\skip103
+\/fbox/border-top-width=\skip104
+\/fbox/border-right-width=\skip105
+\/fbox/border-bottom-width=\skip106
+\/fbox/border-left-width=\skip107
+\/fbox/border-break-top-width=\skip108
+\/fbox/border-break-bottom-width=\skip109
+\/fbox/@lower=\skip110
+\/fbox/@padding-box-height=\skip111
+\/fbox/@padding-box-depth=\skip112
+\/fbox/@padding-box-width=\skip113
+\/fbox/@border-box-width=\skip114
+\/fbox/@border-box-height=\skip115
+\/fbox/@border-box-depth=\skip116
+\/fbox/@border-top-left-radius-x=\skip117
+\/fbox/@border-top-right-radius-x=\skip118
+\/fbox/@border-bottom-left-radius-x=\skip119
+\/fbox/@border-bottom-right-radius-x=\skip120
+\/fbox/@border-top-left-radius-y=\skip121
+\/fbox/@border-top-right-radius-y=\skip122
+\/fbox/@border-bottom-left-radius-y=\skip123
+\/fbox/@border-bottom-right-radius-y=\skip124
+\/fbox/@border-top-left-ix=\skip125
+\/fbox/@border-top-left-iy=\skip126
+\/fbox/@border-top-right-ix=\skip127
+\/fbox/@border-top-right-iy=\skip128
+\/fbox/@border-bottom-left-ix=\skip129
+\/fbox/@border-bottom-left-iy=\skip130
+\/fbox/@border-bottom-right-ix=\skip131
+\/fbox/@border-bottom-right-iy=\skip132
+\/fbox/@border-top-left-phi=\skip133
+\/fbox/@border-top-right-phi=\skip134
+\/fbox/@border-bottom-left-phi=\skip135
+\/fbox/@border-bottom-right-phi=\skip136
+) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2016/11/05 v2.16a AMS math features
+\@mathmargin=\skip137
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks18
+\ex@=\dimen111
+)) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen112
+) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count99
+LaTeX Info: Redefining \frac on input line 213.
+\uproot@=\count100
+\leftroot@=\count101
+LaTeX Info: Redefining \overline on input line 375.
+\classnum@=\count102
+\DOTSCASE@=\count103
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
+\Mathstrutbox@=\box30
+\strutbox@=\box31
+\big@size=\dimen113
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+\macc@depth=\count104
+\c@MaxMatrixCols=\count105
+\dotsspace@=\muskip10
+\c@parentequation=\count106
+\dspbrk@lvl=\count107
+\tag@help=\toks19
+\row@=\count108
+\column@=\count109
+\maxfields@=\count110
+\andhelp@=\toks20
+\eqnshift@=\dimen114
+\alignsep@=\dimen115
+\tagshift@=\dimen116
+\tagwidth@=\dimen117
+\totwidth@=\dimen118
+\lineht@=\dimen119
+\@envbody=\toks21
+\multlinegap=\skip138
+\multlinetaggap=\skip139
+\mathdisplay@stack=\toks22
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
+) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+)
+
+! LaTeX Error: File `stmaryrd.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+Enter file name: 
+! Emergency stop.
+<read *> 
+         
+l.47 \RequirePackage
+                    {textcomp}^^M
+*** (cannot \read from terminal in nonstop modes)
+
+ 
+Here is how much of TeX's memory you used:
+ 5387 strings out of 494946
+ 119489 string characters out of 6181058
+ 174006 words of memory out of 5000000
+ 8672 multiletter control sequences out of 15000+600000
+ 3640 words of font info for 14 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 48i,0n,52p,831b,36s stack positions out of 5000i,500n,10000p,200000b,80000s
+No pages of output.

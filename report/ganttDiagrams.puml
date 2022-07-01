@@ -1,0 +1,96 @@
+@startgantt
+Project starts 2022-02-02
+saturday are closed
+sunday are closed
+projectscale daily
+-- Projected Timelime -- 
+[OnBoarding] lasts 3 days
+[Specification] lasts 7 days
+[Specification] starts at [OnBoarding]'s end
+[Conceptualisation] lasts 7 days
+[Conceptualisation] starts at [Specification]'s end
+-- Actual Time line -- 
+[OnBoarding] lasts 7 days
+[Specification] lasts 7 days
+[Specification] starts at [OnBoarding]'s end
+
+[Global Functionality Test] happens at 2022-05-21
+
+[Conceptualisation] lasts 7 days
+[Conceptualisation] starts at [Specification]'s end
+
+[Tooling Exploration] lasts 7 days
+[Tooling Exploration] starts at [Conceptualisation]'s end
+
+[Acquiring 3D model] lasts 7 days
+[Acquiring 3D model] starts at [Conceptualisation]'s end
+
+[Adding Control scripts] lasts 7 days
+[Adding Control scripts] starts at [Tooling Exploration]'s end
+[Testing Control scripts] lasts 3 days
+[Testing Control scripts] starts at [Adding Control scripts]'s end
+
+[Adding Network scripts] lasts 10 days
+[Adding Network scripts] starts at [Adding Control scripts]'s end
+[Testing Network scripts] lasts 5 days
+[Testing Network scripts] starts at [Adding Network scripts]'s end
+
+[Adding Blockchain Interop] lasts 5 days
+[Adding Blockchain Interop] starts at [Adding Network scripts]'s end
+
+[Adding dynamic Model loaders] lasts 5 days
+[Adding dynamic Model loaders] starts at [Acquiring 3D model]'s start
+[Testing dynamic Model loaders] lasts 3 days
+[Testing dynamic Model loaders] starts at [Adding dynamic Model loaders]'s end
+
+[Adding Avatar scripts] lasts 5 days
+[Adding Avatar scripts] starts at [Adding Control scripts]'s end
+[Testing Avatar scripts] lasts 3 days
+[Testing Avatar scripts] starts at [Adding Avatar scripts]'s end
+[Testing Avatar scripts] starts at [Testing dynamic Model loaders]'s end
+
+[Adding Communication scripts] lasts 5 days
+[Adding Communication scripts] starts at [Testing Network scripts]'s end
+[Testing Communication scripts] lasts 5 days
+[Testing Communication scripts] starts at [Adding Communication scripts]'s end
+
+[Adding TextChat scripts] lasts 1 days
+[Adding TextChat scripts] starts at [Testing Communication scripts]'s end
+[Testing TextChat scripts] lasts 1 days
+[Testing TextChat scripts] starts at [Adding TextChat scripts]'s end
+
+[Adding Browser Interop] lasts 2 days
+[Adding Browser Interop] starts at [Testing Communication scripts]'s end
+[Testing Browser Interop] lasts 2 days
+[Testing Browser Interop] starts at [Adding Browser Interop]'s end
+
+[Adding WebRTC scripts] lasts 7 days
+[Adding WebRTC scripts] starts at [Testing Browser Interop]'s end
+[Testing WebRTC scripts] lasts 3 days
+[Testing WebRTC scripts] starts at [Adding WebRTC scripts]'s end
+
+[Added local zones] lasts 5 days
+[Added local zones] starts at [Testing Communication scripts]'s end
+[Testing local zones] lasts 2 days
+[Testing local zones] starts at [Added local zones]'s end
+[Testing local zones] starts at [Testing WebRTC scripts]'s end
+
+[Bug hunting and fixing] lasts 14 days
+[Bug hunting and fixing] starts at [Global Functionality Test]'s end
+
+[Added File import] lasts 5 days
+[Added File import] starts at [Bug hunting and fixing]'s end
+[Added File import] starts at [Testing local zones]'s end
+[Added File import] starts at [Testing dynamic Model loaders]'s end
+[Added File import] starts at [Testing Browser Interop]'s end
+[Added File import] starts at [Testing Communication scripts]'s end
+[Testing File import] lasts 2 days
+[Testing File import] starts at [Added File import]'s end
+
+[Added Presentation Stage] lasts 1 days
+[Added Presentation Stage] starts at [Added File import]'s end
+[Testing Presentation Stage] lasts 2 days
+[Testing Presentation Stage] starts at [Testing File import]'s end
+
+
+@endgantt

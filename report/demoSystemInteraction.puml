@@ -1,0 +1,20 @@
+@startuml
+|#pink|Actor System|
+start
+if (System is directly Accessible?) is (yes) then
+#pink:**Action directly accessible via static ref**;
+:Invoke Action;
+stop
+else (No)
+|#lightgray|Mediating System|
+#lightgray:**Action is not accessible**;
+:Invoke RPC or Function;
+endif
+|Worker System|
+#lightblue:messages handler;
+while (message available?)
+  :read data;
+  :handle message;
+endwhile
+stop
+@enduml

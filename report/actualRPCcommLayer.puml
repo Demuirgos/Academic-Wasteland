@@ -1,0 +1,37 @@
+@startuml
+"Communication Layer (internal)" -> "Interop Layer" : Initiate RTC call
+note right
+  Communication Server above is 
+  the internal part (handles users and Ids)
+end note
+"Interop Layer" -> "Communication Layer (external)"  : Send Request Message
+note right
+  Communication Server above is 
+  the internal part (handles users and Ids)
+end note
+"Communication Layer (external)"-> "Communication Layer (external)" : Create Request Message
+"Communication Layer (external)" -> "Interop Layer": Send Request Message
+"Interop Layer" -> "Mediation System" : Broadcast Request Message
+"Mediation System" --> "Mediation System" : Invoke RPC
+loop "for every target peer"
+    note right
+       the part in the loop happens in the remote machines 
+       not in the initiator's machine (the madiation system invokes an RPC in those machine
+       via UDP signaling server)
+    end note
+    "Mediation System" --> "Communication System (internal)" : Sync Ids and Users 
+    "Communication System (internal)" --> "Interop Layer" : Request Answer Message
+    "Interop Layer" --> "Communication System (external)": Request Answer Message
+    "Communication System (external)" --> "Communication System (external)": Create Answer Message
+    "Communication System (external)" --> "Interop Layer" : Send Answer Message
+    "Interop Layer" --> "Mediation System" : Broadcast Answer Message
+    "Mediation System" --> "Mediation System" : Invoke RPC 
+end loop
+"Mediation System" -> "Interop Layer" : Send Answer Message
+"Interop Layer" -> "Communication Layer (external)" : Send Answer Message
+"Communication Layer (external)" -> "Communication Layer (external)" : Set Answer Message
+note right
+   after the answer message is set, remote peers will have a P2P connection with
+   the initiator peer.
+end note
+@enduml

@@ -1,0 +1,407 @@
+\chapter{Specification of requirements}%
+\label{chap:chapter_two}
+\vspace{25pt} {
+  \hrulefill \\%
+  This chapter presents the requirements of the project, the needs that it must fulfill.\\
+  Each software in its inception must define its own requirements, and the project must be able to fulfill them.
+  for our program we defined the main actors as being : Visitors, Hosts and Nethermind. 
+  the requirements the software must fill vary depending on the actor using it, for the Visitors, the software needs
+  to provides means of interaction and communication, live spaces and multi-user experience, for the Hosts, the program
+  must allow them to create, modify or delete owned spaces, it should also allow thme to have fine grained control over their spaces
+  and monitors those spaces, and lastly for Nethermind it should allow it as an owning company to monitor and oversee the software flow. \\
+  When it comes to functional needs the software as every other software needs to be maintainable, scalable, and efficient. 
+  \hrulefill\\
+}
+\pagebreak
+\section{\textnormal{Introduction}}
+\label{chap:section_one}
+    the study of the requirements of a project constitutes an integral step of the life cycle of any project, since it helps us formalise in details what was sketched in the previous phases, and it paints a clearer idea about what has to be realised in terms of actions, actors and tasks.
+    
+\section{\textnormal{Specification of requirements}}
+\label{chap:section_one}
+    This section will server as to list the basic needs the system needs to fullfil. in order to clarify the needs of our application's users, we will identify the parties involved in it, as well as the functional requirements as well as the non-functional requirements that our project needs to obey. 
+  \subsection{Actors in the system}
+  before we can go Identify the needs and requirements of our system, we must first identify the various actors involved in it (system).
+  An Actor is an abstract concept modelling an external factor that may or will interact directly with our system.
+  the project being a Meta-verse based application, we can Identify the following actors : 
+  \begin{itemize}
+    \item \texttt{Visitors}  : 3rd Party users, their functionalities are limited to communication and in app transactions;
+    \item \texttt{Hosts}     : 2nd Party users, they have full control over spaces, and virtual markets;
+    \item \texttt{Nethermind}: Infrastructure provider, and monetary transactions facilitator;
+  \end{itemize}
+  \subsection{Functional requirements}
+  These are the  functionalities of the system, they explain and specify the behaviour of each input and output of the system.\\
+  \begin{figure}[H]%
+    \center%
+    \includegraphics[height=0.75\textwidth]{usecase-chart1.png}%
+    \caption[Use case diagram of Functional Needs]{Use case diagram of Functional Needs}\label{fig:Image}%
+  \end{figure}
+  \subsubsection{Users needs}
+  \paragraph {Use cases of Visitors}
+  A visitor is a non authoritative user that has limited functionalities, but they are the largest demography in our target users, the functionalities associated with them are : 
+  \begin{itemize}
+    \item Join Immersive VR/AR/3D spaces;
+    \begin{itemize}
+      \item Move inside the space;
+      \item Leave the Space;
+      \item Alter the Space;
+      \item Interact with other Users;
+      \item Interact with Objects / Arts;
+    \end{itemize}
+    \item Explore Existing 3D Spaces;
+    \item Create Temporary 3D Spaces;
+  \end{itemize}
+  
+  \paragraph {Use cases of Hosts}
+  A host is a user who can create persistent 3D spaces and populate them with Miscellaneous Objects but most importantly they can have spaces that allow monetary transaction within them, their main needs are : 
+  \begin{itemize}
+    \item Create Immersive \ac{VR}/ \ac{AR}/ \ac{3D} meetings;
+    \begin{itemize}
+      \item Build a shared space;
+      \item Import models;
+      \item Share the space;
+      \item Delete the space;
+      \item Define transaction rules;
+      \item Interlink owned spaces;
+    \end{itemize}
+    \item Populate Spaces with Arts / Objects;
+    \item Invite Visitors (in case the space is private); 
+    \item Monitor Spaces and collect metadata;
+  \end{itemize}
+  \subsubsection{Textual Description Of use cases}
+  In this Section we will represent some of the use cases of the system, and their functionalities, in the form of tables that show 
+  various metadata about each use case, such as the Actor, the pre-condtions needed for such action to be possible, the post-conditions
+  that will be achieved after the action, and the expected output, as well as a simple overview of the process itself. 
+  \pagebreak
+  \paragraph{User registration}
+ 
+  \begin{center}
+    \begin{tabular}{ | p{3cm} | p{12cm} |}
+    \hline
+    \hline
+    \hline
+        \hline
+        Use Case        & Register \\
+        \hline
+        Description     & The Actor Registers in the system\\
+        \hline
+        Actors          & \begin{itemize}[noitemsep, nosep] \setlength\itemsep{1pt} \item Host \item Visitor \end{itemize}\\
+        \hline
+        Start Event     & Visiting the System (Website, Apps)\\
+        \hline
+        Basic Scenario  & \begin{itemize}[noitemsep, nosep] \setlength\itemsep{1pt} \item the Actor visits the webiste/Apps \item the actor enter their credentials \item the system verifies the data \end{itemize}\\
+        \hline
+        Variations      & The actor is potential : Visitor | Host\\
+        \hline
+        Pre-Conditions  & Actor un-registered\\
+        \hline
+        Post-Conditions & Actor registered\\
+        \hline
+        Constraints     & -\\
+        \hline
+    \hline
+    \end{tabular}
+  \end{center}
+  The following is a overview diagram of User registration process :
+  \begin{figure}[H]%
+    \center%
+    \includegraphics[height=0.3\textwidth]{{"seqdiag/User registration"}.png}%
+    \caption[Sequence diagram of User registration process]{Sequence diagram of User registration process}\label{fig:Image}%
+  \end{figure}
+  The figure shows the registration process, which can be simplified in the following simple steps :
+  the actor registers in the system, and the system verifies the data, and then the actor is registered.
+  \pagebreak
+  \paragraph{User Authentication}
+ 
+  \begin{center}
+    \begin{tabular}{ | p{3cm} | p{12cm} |}
+    \hline
+    \hline
+    \hline
+        \hline
+        Use Case        & Authenticate \\
+        \hline
+        Description     & The Actor Authenticate with the System\\
+        \hline
+        Actors          & \begin{itemize}[noitemsep, nosep] \setlength\itemsep{1pt} \item Host \item Visitor \end{itemize}\\
+        \hline
+        Start Event     & Visiting the System (Website, Apps)\\
+        \hline
+        Basic Scenario  & \begin{itemize}[noitemsep, nosep] \setlength\itemsep{1pt} \item the Actor visits the webiste/Apps \item the actor enter their credentials \item the system verifies the data \end{itemize}\\
+        \hline
+        Variations      & \begin{itemize}[noitemsep, nosep] \setlength\itemsep{1pt} \item the Actor authenticates using Classic logins : Email, Password \item the Actor authenticates using WEB3 tokens : wallet + User token \end{itemize}\\
+        \hline
+        Pre-Conditions  & Actor un-authenticated\\
+        \hline
+        Post-Conditions & Actor has access to the build\\
+        \hline
+        Constraints     & Actor must have been registered in the system\\
+        \hline
+    \hline
+    \end{tabular}
+  \end{center}
+  \pagebreak
+  
+  The following is a overview diagram of User authentication process :
+  \begin{figure}[H]%
+    \center%
+    \includegraphics[height=0.75\textwidth]{{"seqdiag/User Authentication"}.png}%
+    \\caption[Sequence diagram of User Authenticatio]{Sequence diagram of User Authenticatio}\label{fig:Image}%
+  \end{figure}
+  The diagram shows the simple steps a user can take to register, it shows that the user can either,
+  chose to login in the old fashioned way using email and password, or using web3 authentication with a wallet and a user Id token.
+  \pagebreak
+  \paragraph{User logout}
+ 
+  \begin{center}
+    \begin{tabular}{ | p{3cm} | p{12cm} |}
+    \hline
+    \hline
+    \hline
+        \hline
+        Use Case        & Logout \\
+        \hline
+        Description     & The Actor logs out of the System\\
+        \hline
+        Actors          & \begin{itemize}[noitemsep, nosep] \setlength\itemsep{1pt} \item Host \item Visitor \end{itemize}\\
+        \hline
+        Start Event     & Clicking logout or exit\\
+        \hline
+        Basic Scenario  & \begin{itemize}[noitemsep, nosep] \setlength\itemsep{1pt} \item the Actor clicks on Exit button \item the app navigates to the main page \end{itemize}\\
+        \hline
+        Variations      & \begin{itemize}[noitemsep, nosep] \setlength\itemsep{1pt} \item Actor Exits The app \item Actor clicks Logout \end{itemize}\\
+        \hline
+        Pre-Conditions  & Actor authenticated\\
+        \hline
+        Post-Conditions & Actor un-authenticated and has no access to the spaces\\
+        \hline
+        Constraints     & Actor must be authenticated\\
+        \hline
+    \hline
+    \end{tabular}
+  \end{center}
+  \pagebreak
+  
+  The following is a overview diagram of User logout process :
+  \begin{figure}[H]%
+    \center%
+    \includegraphics[height=0.75\textwidth]{{"seqdiag/User logout"}.png}%
+    \caption[Sequence diagram of User logout process]{Sequence diagram of User logout process}\label{fig:Image}%
+  \end{figure}
+  As with most applications logging out can happen either by explicitly clicking on the logout button, or by closing the app,
+  which is exactly what the diagram above showcases. 
+  \pagebreak
+  \paragraph{User join room}
+  \begin{center}
+    \begin{tabular}{ | p{3cm} | p{12cm} |}
+    \hline
+    \hline
+    \hline
+        \hline
+        Use Case        & Join Room \\
+        \hline
+        Description     & The Actor Joins a Virtual Space in the app\\
+        \hline
+        Actors          & Visitor\\
+        \hline
+        Start Event     & Selecting a space\\
+        \hline
+        Basic Scenario  & \begin{itemize}[noitemsep, nosep] \setlength\itemsep{1pt} \item the actor browses the spaces \item the actor joins that space \end{itemize}\\
+        \hline
+        Variations      & \begin{itemize}[noitemsep, nosep] \setlength\itemsep{1pt} \item The actor joins his public spaces \item the actor joins private spaces \end{itemize}\\
+        \hline
+        Pre-Conditions  & 3D virtual world unaccessible\\
+        \hline
+        Post-Conditions & player spawns in a virtual space\\
+        \hline
+        Constraints     & Actor must be authenticated\\
+        \hline
+    \hline
+    \end{tabular}
+  \end{center}
+  The following is a overview diagram of User joining spaces process :
+  \begin{figure}[H]%
+    \center%
+    \includegraphics[height=0.3\textwidth]{{"seqdiag/User Room join"}.png}%
+    \caption[Sequence diagram of User join room process]{Sequence diagram of User join room process}\label{fig:Image}%
+  \end{figure}
+  the diagram shows the steps a user can take to join a space, it shows that after authenticating, the user is 
+  presented with a list of spaces, and can select one to join, once joined the system handles instantiations of necessary artifacts,
+  and then it gives back control to the user.
+  \pagebreak
+  \paragraph{User Room exploration}
+ 
+  \begin{center}
+    \begin{tabular}{ | p{3cm} | p{12cm} |}
+    \hline
+    \hline
+    \hline
+        \hline
+        Use Case        & Explore Room \\
+        \hline
+        Description     & The Actor Explore Virtual Spaces in the app\\
+        \hline
+        Actors          & Visitor\\
+        \hline
+        Start Event     & Joining The Space\\
+        \hline
+        Basic Scenario  & \begin{itemize}[noitemsep, nosep] \setlength\itemsep{1pt} \item the actor joins a space \item the actor gets the avatar \item the controls get activate \item the actor can move the avatar \end{itemize}\\
+        \hline
+        Variations      & \begin{itemize}[noitemsep, nosep] \setlength\itemsep{1pt} \item the actor can use touch controls \item the actor can use VR controls \item the actor can use Keyboard/Mouse controls \end{itemize}\\
+        \hline
+        Pre-Conditions  & Avatar un-accessible\\
+        \hline
+        Post-Conditions & avatar present and controllable\\
+        \hline
+        Constraints     & Actor must join a space\\
+        \hline
+    \hline
+    \end{tabular}
+  \end{center}
+  \pagebreak
+  
+  The following is a overview diagram of User exploring process :
+  \begin{figure}[H]%
+    \center%
+    \includegraphics[height=0.75\textwidth]{{"seqdiag/User Room exploration"}.png}%
+    \caption[Sequence diagram of User Room exploration]{Sequence diagram of User Room exploration}\label{fig:Image}%
+  \end{figure}
+  After joining a space, the User gets control of his avatar, and can move it around in the space.
+  \pagebreak
+  \paragraph{User leave room}
+  \begin{center}
+    \begin{tabular}{ | p{3cm} | p{12cm} |}
+    \hline
+    \hline
+    \hline
+        \hline
+        Use Case        & Leave Room \\
+        \hline
+        Description     & The Actor leave the virtual Space\\
+        \hline
+        Actors          & Visitor\\
+        \hline
+        Start Event     & Clicking on Leave Space\\
+        \hline
+        Basic Scenario  & \begin{itemize}[noitemsep, nosep] \setlength\itemsep{1pt} \item the actor click on Exit button \item the system navigate to main menu \end{itemize}\\
+        \hline
+        Variations      & \begin{itemize}[noitemsep, nosep] \setlength\itemsep{1pt} \item Actor Exits The app \item Actor Leave the space \end{itemize}\\
+        \hline
+        Pre-Conditions  & Actor state in Space\\
+        \hline
+        Post-Conditions & Actor state out of space\\
+        \hline
+        Constraints     & Actor must be in a space\\
+        \hline
+    \hline
+    \end{tabular}
+  \end{center}
+  
+  The following is a overview diagram of User leaving process :
+  \begin{figure}[H]%
+    \center%
+    \includegraphics[height=0.35\textwidth]{{"seqdiag/User Room leave"}.png}%
+    \caption[Sequence diagram of User leave room process]{Sequence diagram of User leave room process}\label{fig:Image}%
+  \end{figure}
+  While in space the user can leave, either via the logout button, or by simply exiting the application.
+  \pagebreak
+  \paragraph{User in space interactions with users}
+ 
+  \begin{center}
+    \begin{tabular}{ | p{3cm} | p{12cm} |}
+    \hline
+    \hline
+    \hline
+        \hline
+        Use Case        & Interact With Users \\
+        \hline
+        Description     & Actor can communicate and Interact with other users in the shared space\\
+        \hline
+        Actors          & Visitor\\
+        \hline
+        Start Event     & Joining The Space\\
+        \hline
+        Basic Scenario  & \begin{itemize}[noitemsep, nosep] \setlength\itemsep{1pt} \item the actor joins a space \item the actor gets In space UI \item the controls get activated \item the actor can use UI to communicate \end{itemize}\\
+        \hline
+        Variations      & \begin{itemize}[noitemsep, nosep] \setlength\itemsep{1pt} \item The Actor Uses Voice chat \item The Actor Uses Text chat \item The Actor Uses Emotes \end{itemize}\\
+        \hline
+        Pre-Conditions  & Actor cant interact with other users\\
+        \hline
+        Post-Conditions & Actor Interacts with users in the shared space\\
+        \hline
+        Constraints     & Actor must be in a space\\
+        \hline
+    \hline
+    \end{tabular}
+  \end{center}
+  \pagebreak
+  
+  The following is a overview diagram of User / User Interactions (communication) :
+  \begin{figure}[H]%
+    \center%
+    \includegraphics[height=0.75\textwidth]{{"seqdiag/User Interaction"}.png}%
+    \caption[Sequence diagram of User in space interactions with users]{Sequence diagram of User in space interactions with users}\label{fig:Image}%
+  \end{figure}
+  The diagram above shows the steps taken to handle user to user communication, so first the user joins a space, then the system
+  bootstraps some necessary components for communications, and then it starts capturing data from the user in order to broacast it to the other users,
+  that data is mainly encoded text or audio buffers.
+  \pagebreak
+  \paragraph{User in space interactions with inanimate objects}
+ 
+  \begin{center}
+    \begin{tabular}{ | p{3cm} | p{12cm} |}
+    \hline
+    \hline
+    \hline
+        \hline
+        Use Case        & Interact With Objects \\
+        \hline
+        Description     & Actor can communicate and Interact with other users in the shared space\\
+        \hline
+        Actors          & Visitor\\
+        \hline
+        Start Event     & Joining The Space\\
+        \hline
+        Basic Scenario  & \begin{itemize}[noitemsep, nosep] \setlength\itemsep{1pt} \item the actor joins a space \item the actor gets In-space UI \item the controls get activated \item the actor can use UI to alter in space objects' state \end{itemize}\\
+        \hline
+        Variations      & \begin{itemize}[noitemsep, nosep] \setlength\itemsep{1pt} \item The Actor scales the object \item The Actor rotates the objects \item The Actor moves the objects \item The Actor adds new objects \item The Actor removes existing objects \end{itemize}\\
+        \hline
+        Pre-Conditions  & Actor cant interact with other objects\\
+        \hline
+        Post-Conditions & Actor Interacts with objects in the shared space\\
+        \hline
+        Constraints     & Actor must be in a space\\
+        \hline
+    \hline
+    \end{tabular}
+  \end{center}
+  \pagebreak
+  
+  The following is a overview diagram of User / Object Interactions :
+  \begin{figure}[H]%
+    \center%
+    \includegraphics[height=0.75\textwidth]{{"seqdiag/Object Interaction"}.png}%
+    \caption[Sequence diagram of User in space interactions with inanimate objects]{Sequence diagram of User in space interactions with inanimate objects}\label{fig:Image}%
+  \end{figure}
+  Basically once inside a space, the user can alter objects marked as modifiable, and the system will broadcast the changes to the other users,
+  the user can modify their transform component and these changes will be reflected on other machines as well. 
+  User can Also add new objects or remove objects from scenes.
+  \pagebreak
+
+  \section{\textnormal{Specification of non-functional requirements}}
+  After having determined the functional needs, we present below all the
+  constraints to be respected to guarantee the performance of the system while respecting the requirements
+  of the user.
+  \begin{itemize} 
+    \item Performance : Our application must ensure a minimum response time while meeting the needs of the manipulator;  
+    \item Simplicity : Every user will be able to use this application in an easy and clear way;
+    \item Ergonomics : Interfaces should be simple and user-friendly;
+    \item Modularity : Have simple code that is easy to maintain and understand when needed;
+    \item Maintainability : the project's inner working should be maintainable and conform to industry standards;
+    \item portability : the project needs to not be tied to platform specific technologies to allow for build target portability;
+  \end{itemize}
+
+\section{\textnormal{Conclusion}}
+This chapter adressed the various requirements the projects needs to follow and fulfil,
+mainly from the visitor's and the host's points of view, which can be summarized in "democratized metaverse building",
+this chapter also defined some basic non-functional needs the project has, such as modularity, portability, and Maintainability.
