@@ -1,0 +1,117 @@
+\documentclass[paper=a4,fontsize=10pt]{article}
+
+\usepackage[margin=1.4cm]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlist[itemize]{noitemsep, topsep=2pt}
+
+% Section styling
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+
+\begin{document}
+
+%====================
+% HEADER
+%====================
+\begin{center}
+{\LARGE \textbf{BOUCHAREB Ayman}}\\
+\vspace{4pt}
+\small
+Tetouan, Morocco \quad | \quad +212697732356 \quad | \quad 
+\href{mailto:Ayman.Bouchareb@outlook.fr}{Ayman.Bouchareb@outlook.fr} \\
+\href{https://github.com/DemuirGos}{github.com/DemuirGos} \quad | \quad 
+\href{https://linkedin.com/in/ayman-bouchareb-511abb19a}{linkedin.com/in/ayman-bouchareb-511abb19a}
+\end{center}
+
+\vspace{6pt}
+
+%====================
+% PROFILE
+%====================
+\section*{Profile}
+Backend-focused .NET engineer working on high-performance systems and Ethereum clients. 
+Strong experience with execution engines, runtime behavior, and performance optimization. 
+Interested in scalable backend systems and low-level infrastructure.
+
+\vspace{4pt}
+
+%====================
+% SKILLS
+%====================
+\section*{Skills}
+\textbf{Languages:} C\#, F\#, C/C++, SQL \\
+\textbf{Backend:} ASP.NET Core, REST APIs, SignalR, Async Programming \\
+\textbf{Systems:} Virtual Machines, IL Generation, Execution Engines, Memory Models \\
+\textbf{Blockchain:} Ethereum, EVM Internals \\
+\textbf{Performance:} Profiling, Allocation Reduction, Control Flow Optimization \\
+\textbf{Tools:} Docker, Git, MongoDB
+
+\vspace{4pt}
+
+%====================
+% EXPERIENCE
+%====================
+\section*{Experience}
+
+\textbf{Ethereum Core Developer — Nethermind} \hfill \textit{2022--Present}
+\begin{itemize}
+\item Implemented and optimized EVM execution logic in a production client
+\item Designed execution pipelines and improved opcode handling performance
+\item Worked on state access, storage, and transaction execution
+\item Reduced allocations and improved performance in critical paths
+\end{itemize}
+
+\textbf{Software Engineer (Internship) — Nethermind} \hfill \textit{2022}
+\begin{itemize}
+\item Built backend systems for real-time multi-user applications
+\item Implemented state synchronization and event propagation
+\item Focused on latency and consistency in distributed environments
+\end{itemize}
+
+\textbf{Backend Developer (Internship) — Become Digital} \hfill \textit{2021--2022}
+\begin{itemize}
+\item Developed ASP.NET Core APIs and real-time systems using SignalR
+\item Implemented async communication and MongoDB persistence
+\end{itemize}
+
+\vspace{4pt}
+
+%====================
+% PROJECTS
+%====================
+\section*{Projects}
+
+\textbf{IL-Dovah} \hfill \href{https://github.com/Demuirgos/ILDovah}{GitHub}
+\begin{itemize}
+\item Implementation of .NET IL (ECMA-335) with execution semantics
+\item Explored stack behavior, control flow, and runtime structure
+\end{itemize}
+
+\textbf{YetAnotherVM} \hfill \href{https://github.com/Demuirgos/YetAnotherVM}{GitHub}
+\begin{itemize}
+\item Custom VM with multiple execution models (stack / register)
+\item Designed instruction set and compiler pipeline
+\end{itemize}
+
+\textbf{Inoculator} \hfill \href{https://github.com/Demuirgos/Inoculator}{GitHub}
+\begin{itemize}
+\item IL rewriting framework for runtime code injection
+\item Enabled dynamic transformation of compiled assemblies
+\end{itemize}
+
+\vspace{4pt}
+
+%====================
+% EDUCATION
+%====================
+\section*{Education}
+
+\textbf{MEng in Computer Science} \hfill \textit{2017--2022}\\
+National School of Applied Sciences, Tetouan
+
+\end{document}
