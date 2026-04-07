@@ -1,0 +1,127 @@
+\documentclass[paper=a4,fontsize=11pt]{scrartcl}
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[protrusion=true,expansion=true]{microtype}
+\usepackage{amsmath,amsfonts,amsthm}
+\usepackage{graphicx}
+\usepackage[svgnames]{xcolor}
+\usepackage{geometry}
+\textheight=700px
+\usepackage{url}
+\usepackage{hyperref}
+
+\frenchspacing
+\pagestyle{empty}
+
+\usepackage{sectsty}
+\sectionfont{
+	\usefont{OT1}{phv}{b}{n}
+	\sectionrule{0pt}{0pt}{-5pt}{3pt}}
+
+\newlength{\spacebox}
+\settowidth{\spacebox}{8888888888}
+\newcommand{\sepspace}{\vspace*{1em}}
+
+\newcommand{\MyName}[1]{
+	\Huge \usefont{OT1}{phv}{b}{n} \hfill #1
+	\par \normalsize \normalfont}
+
+\newcommand{\NewPart}[1]{\section*{\uppercase{#1}}}
+
+\newcommand{\SkillsEntry}[2]{
+	\noindent\hangindent=2em\hangafter=0
+	\parbox{\spacebox}{\textit{#1}}
+	\hspace{1.5em} #2 \par}
+
+\newcommand{\Entry}[4]{
+	\noindent \textbf{#1} \hfill
+	\colorbox{Black}{\color{White}#2} \par
+	\noindent \textit{#3} \par
+	\noindent\hangindent=2em\hangafter=0 \small #4
+	\normalsize \par}
+
+\begin{document}
+
+\MyName{BOUCHAREB Ayman}
+\sepspace
+
+%%% PERSONAL DETAILS
+\NewPart{Personal Details}{}
+\begin{tabular}{ c c c c }
+\multicolumn{1}{l}{Birthdate} & 23 July 1999 &
+\multicolumn{1}{l}{Location} & Tetouan, Morocco \\  
+\multicolumn{1}{l}{Phone} & +212697732356 & 
+\multicolumn{1}{l}{Email} & \url{Ayman.Bouchareb@outlook.fr} \\
+\multicolumn{1}{l}{GitHub} & \multicolumn{3}{l}{\url{https://github.com/DemuirGos}} \\
+\multicolumn{1}{l}{LinkedIn} & \multicolumn{3}{l}{\url{https://www.linkedin.com/in/ayman-bouchareb-511abb19a/}}
+\end{tabular}
+
+%%% SUMMARY
+\NewPart{Profile}{}
+\paragraph{}
+Backend-focused .NET engineer with experience in high-performance systems and blockchain clients. 
+Strong background in execution engines, runtime behavior, and low-level optimization. 
+Interested in building scalable backend systems and performance-critical infrastructure.
+
+\NewPart{Experience}{}
+
+\Entry{Ethereum Core Developer}{2022--Present}{Nethermind}{
+Working on a production-grade Ethereum client in .NET.\\
+-- Implemented and optimized EVM execution logic with focus on correctness and gas efficiency\\
+-- Designed execution pipelines and improved opcode handling performance\\
+-- Worked on state management, storage access, and transaction execution\\
+-- Reduced allocations and improved runtime performance in critical paths\\
+-- Ensured protocol compliance across edge cases and execution scenarios
+}
+
+\Entry{Software Engineer (Internship)}{2022}{Nethermind}{
+Worked on real-time, networked application systems.\\
+-- Implemented synchronization logic for multi-user environments\\
+-- Designed backend components for state propagation and consistency\\
+-- Integrated external identity/avatar systems into runtime\\
+-- Focused on latency and real-time interaction constraints
+}
+
+\Entry{Backend Developer (Internship)}{2021--2022}{Become Digital}{
+Developed backend services for an interactive web platform.\\
+-- Built ASP.NET Core APIs and real-time features using SignalR\\
+-- Designed async data flows between frontend and backend\\
+-- Modeled and persisted data using MongoDB\\
+-- Implemented event-driven updates for live user interactions
+}
+
+\NewPart{Skills}{}
+
+\SkillsEntry{Languages:}{C\#, F\#, C/C++, SQL}
+\SkillsEntry{Backend:}{ASP.NET Core, REST APIs, SignalR, Async Programming}
+\SkillsEntry{Systems:}{VMs, Execution Engines, IL Generation, Memory Models}
+\SkillsEntry{Blockchain:}{Ethereum, EVM Internals}
+\SkillsEntry{Performance:}{Profiling, Allocation Reduction, Control Flow Optimization}
+\SkillsEntry{Tools:}{Git, Docker, MongoDB}
+
+\NewPart{Projects}{}
+
+\Entry{IL-Dovah}{2022--2023}{\url{https://github.com/Demuirgos/ILDovah}}{
+Implementation of the .NET IL specification (ECMA-335).\\
+-- Built execution model and instruction handling\\
+-- Explored stack behavior and control flow semantics
+}
+
+\Entry{YetAnotherVM}{2023}{\url{https://github.com/Demuirgos/YetAnotherVM}}{
+Custom VM supporting multiple execution models.\\
+-- Designed instruction set and execution pipeline\\
+-- Implemented compiler targeting the VM
+}
+
+\Entry{Inoculator}{2022--2023}{\url{https://github.com/Demuirgos/Inoculator}}{
+IL rewriting framework for dynamic code injection.\\
+-- Implemented runtime transformation of compiled code
+}
+
+\Entry{Lambda Calculus Compiler}{2021--2023}{\url{https://github.com/Demuirgos/Lambda-Calculus}}{
+Prototype language compiling to untyped lambda calculus.\\
+-- Explored functional compilation models and evaluation strategies
+}
+
+\end{document}
